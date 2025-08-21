@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // clubs__swiper — может быть несколько
   initSwiper('.clubs__swiper', {
-    slidesPerView: 3,
+    slidesPerView: 2,
     speed: 800,
     grabCursor: true,
     loop: true,
@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     autoHeight: false,
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 15 },
-      750: { slidesPerView: 2, spaceBetween: 15 },
-      1100: { slidesPerView: 3, spaceBetween: 15 },
+      767: { slidesPerView: 2, spaceBetween: 15 },
+    
     },
   });
 

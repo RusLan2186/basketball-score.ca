@@ -8,7 +8,7 @@
   display: none !important;
 }
 
-.custom__swiper {
+.custom__swiper, .clubs__swiper {
   padding-top: 60px;
 }
 
