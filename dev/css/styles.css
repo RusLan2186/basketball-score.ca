@@ -7,6 +7,7 @@
 @import 'results.css';
 @import 'full-video.css';
 @import 'clubs.css';
+@import 'footer.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
@@ -51,10 +52,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
 }
-.footer {
-  background: #ff7f00;
-  padding-top: 40px;
-}
+
 .container {
   max-width: 1440px;
   width: 100%;
@@ -267,52 +265,7 @@ body {
   background: #ff7f00;
 }
 
-.footer__content {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  column-gap: 10px;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(255, 255, 255);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  padding-bottom: 30px;
-}
-.footer__logo_img {
-  height: 200px;
-}
-.footer__menu {
-  flex-basis: 60%;
-  display: flex;
-  justify-content: space-between;
-}
-.footer-menu__item {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-}
-.footer__link {
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  transition: 0.3s all ease;
-}
-.footer__link:hover {
-  color: rgb(0, 0, 0);
-  transition: 0.3s all ease;
-}
-.footer__btm {
-  font-size: 16px;
-  font-weight: 500;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-transform: uppercase;
-}
+
 .mb-reset {
   margin-bottom: 0;
 }
