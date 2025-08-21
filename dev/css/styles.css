@@ -5,6 +5,7 @@
 @import 'news.css';
 @import 'tables.css';
 @import 'results.css';
+@import 'full-video.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
@@ -202,30 +203,10 @@ body {
   height: 30px;
 }
 
-
 .team-logo-70 {
   height: 70px;
 }
 
-
-.full-video__section {
-  margin-bottom: 50px;
-  align-items: center;
-  display: flex;
-  height: 80vh;
-  position: relative;
-  background-image: url('../images/4ae967611a4878322fbdc22c163d4a29.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.full-video__content {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
 .play__icon_big {
   cursor: pointer;
   left: 0;

@@ -1,0 +1,45 @@
+.full-video__section {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+  background-image: url('../images/4ae967611a4878322fbdc22c163d4a29.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.full-video__content {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.full-video__icon {
+  height: 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .full-video__section {
+    height: 60vh;
+    background-position: center center;
+  }
+}
+@media (max-width: 767.98px) {
+  .full-video__icon {
+    height: 80px;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .full-video__section {
+    height: 40vh;
+    background-position: center center;
+  }
+
+  .full-video__icon {
+    height: 60px;
+  }
+}
