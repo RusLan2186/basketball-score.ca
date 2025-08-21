@@ -133,7 +133,9 @@
     top: 0%;
     right: -100%;
     z-index: 15;
-    background-color: #000000f8;
+    background-image: url('../images/e0d1d676f40f99b9a612436bef06ef95.webp');
+    background-size: cover;
+    background-position: 65% top;
     border-bottom: 2px solid rgb(255, 127, 0);
     padding: 100px 30px 50px 30px;
     transition: right 0.6s;
@@ -159,13 +161,31 @@
   .header__nav_list {
     flex-direction: column;
     row-gap: 25px;
-    align-items: flex-end;
+    align-items: flex-start;
     align-content: end;
     flex-wrap: nowrap;
     width: 100%;
+    position: relative;
+    z-index: 10;
   }
 
   .header__nav_link {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .header__nav {
+    background-position: 70% top;
+  }
+
+  .header__nav:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.496);
+
   }
 }
