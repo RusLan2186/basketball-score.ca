@@ -3,6 +3,7 @@
 @import 'hero.css';
 @import 'matches.css';
 @import 'news.css';
+@import 'tables.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
@@ -24,8 +25,9 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
+
 ::-webkit-scrollbar:horizontal {
   height: 3px;
 }
@@ -59,7 +61,7 @@ body {
 }
 
 .section {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .link-reset {
@@ -134,7 +136,7 @@ body {
 }
 
 .title__block {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .grid-col-70-1fr {
@@ -186,50 +188,15 @@ body {
 .fs-22 {
   font-size: 22px;
 }
-.point-table__section {
-  margin-bottom: 50px;
-}
-.point-table__header {
-  background: #ff7f00;
-  display: grid;
-  font-size: 16px;
-  font-weight: 600;
-  grid-template-columns: 1fr 20% repeat(12, 1fr);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-transform: uppercase;
-}
+
 .text-left {
   text-align: left;
 }
-.point-table__body {
-  align-items: center;
-  display: grid;
-  font-size: 16px;
-  grid-template-columns: 1fr 20% repeat(12, 1fr);
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(255, 127, 0);
-  border-top-width: 0;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
+
 .text-bold {
   font-weight: 700;
 }
-.point-table__team_block {
-  align-items: center;
-  display: flex;
-  column-gap: 10px;
-  font-size: 17px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
+
 .team-logo__small {
   height: 30px;
 }
@@ -1169,10 +1136,14 @@ body {
   }
 
   .section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
-  .title{
+  .title__block {
+    margin-bottom: 25px;
+  }
+
+  .title {
     font-size: 30px;
   }
 }
