@@ -8,6 +8,7 @@
 @import 'full-video.css';
 @import 'clubs.css';
 @import 'footer.css';
+@import 'pagination.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
@@ -48,6 +49,7 @@ body {
 }
 
 .main {
+  padding-top: 130px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -69,6 +71,9 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+.pdng-top-reset{
+  padding-top: 0;
 }
 
 .title {
@@ -269,33 +274,7 @@ body {
 .mb-reset {
   margin-bottom: 0;
 }
-.pagination__section {
-  display: flex;
-  justify-content: center;
-  column-gap: 10px;
-  margin-top: 30px;
-}
-.pag__item {
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(255, 127, 0);
-  color: rgb(255, 255, 255);
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 2px;
-  padding-top: 2px;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.3s all ease;
-}
-.pag__item:hover {
-  background: #ff7f00;
-  color: rgb(0, 0, 0);
-  transition: 0.3s all ease;
-}
-.pag-item__active {
-  background: #ff7f00;
-}
+
 .link-active {
   border-bottom-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
@@ -895,6 +874,11 @@ body {
   body.lock {
     overflow: hidden;
   }
+
+  .main {
+  padding-top: 100px;
+
+}
 
   .section {
     margin-bottom: 40px;

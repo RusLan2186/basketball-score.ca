@@ -11,115 +11,78 @@
 
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="container">
           <div class="header__content">
-            <a
-              class="link-reset header__logo_link"
-              href="https://basketball-score.ca/"
-              ><img
+            <a class="header__logo_link" href="/">
+              <img
                 class="header__logo_img"
+                alt="logo"
                 src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png"
-            /></a>
-            <div class="header__menu">
-              <ul class="header__menu_list reset">
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
                 <li>
-                  <a
-                    class="header__menu_link link-reset link-active"
-                    href="https://basketball-score.ca/news"
-                    >news</a
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video-post.html"
+                    >video post</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/post"
-                    >post</a
+                  <a class="header__nav_link" href="/pages/news.html">news</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/review.html"
+                    >review</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/video-post"
-                    >video-post</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/reviews"
-                    >reviews</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/calendar"
+                  <a class="header__nav_link" href="/pages/calendar.html"
                     >calendar</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/statistics"
-                    >statistics</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/results"
+                  <a class="header__nav_link" href="/pages/results.html"
                     >results</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/videos"
-                    >videos</a
-                  >
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/lives"
-                    >lives</a
-                  >
+                  <a class="header__nav_link" href="/pages/lives.html">lives</a>
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/team"
-                    >team</a
-                  >
+                  <a class="header__nav_link" href="/pages/club.html">club</a>
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/teams"
-                    >teams</a
-                  >
+                  <a class="header__nav_link" href="/pages/clubs.html">clubs</a>
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/player"
+                  <a class="header__nav_link" href="/pages/player.html"
                     >player</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__menu_link"
-                    href="https://basketball-score.ca/contact"
+                  <a class="header__nav_link" href="/pages/contact.html"
                     >contact</a
                   >
                 </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
+      </header>
+      <main class="main">
         <section class="news__section section section">
           <div class="container">
             <div class="title__block">
@@ -189,7 +152,7 @@
                 </a>
               </div>
             </div>
-              <div class="cards__items">
+            <div class="cards__items">
               <article class="card__item">
                 <a href="#" class="card__img_block image-block"
                   ><img
@@ -254,45 +217,122 @@
                   </a>
                   <p class="description card__description">
                     A young talent delivers an outstanding performance, making a
-                    strong case. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae numquam nisi exercitationem dolore fugit ut possimus labore consectetur? Ex?
+                    strong case. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Laboriosam beatae numquam nisi
+                    exercitationem dolore fugit ut possimus labore consectetur?
+                    Ex?
+                  </p>
+                </div>
+              </article>
+              <article class="card__item">
+                <a href="#" class="card__img_block image-block"
+                  ><img
+                    class="card__img ibg"
+                    src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif"
+                /></a>
+                <div class="card__footer">
+                  <h4 class="label fs-16">02.02.2025</h4>
+                  <a href="#" class="hover-text-orange card__title"
+                    >Trade Rumors Heat Up</a
+                  >
+                  <p class="description card__description">
+                    crucial player faces time off due to injury, impacting
+                    upcoming games.
+                  </p>
+                </div>
+              </article>
+              <article class="card__item">
+                <a href="#" class="card__img_block image-block"
+                  ><img
+                    class="card__img ibg"
+                    src="/images/f1ac0fb455b8d40ebd61e1320387601c.webp"
+                /></a>
+                <div class="card__footer">
+                  <h4 class="label fs-16">03.02.2025</h4>
+                  <a href="#" class="hover-text-orange card__title"
+                    >Overtime Victory</a
+                  >
+                  <p class="description card__description">
+                    A dominant defensive effort shuts down the opposition and
+                    leads to victory.
+                  </p>
+                </div>
+              </article>
+              <article class="card__item">
+                <a href="#" class="card__img_block image-block"
+                  ><img
+                    class="card__img ibg"
+                    src="/images/79ba54b19f3faef57d735d0f3497aee5.webp"
+                /></a>
+                <div class="card__footer">
+                  <h4 class="label fs-16">04.02.2025</h4>
+                  <a href="#" class="hover-text-orange card__title"
+                    >Injury Update</a
+                  >
+                  <p class="description card__description">
+                    Speculation grows as reports suggest a major trade could be
+                    in the works.
+                  </p>
+                </div>
+              </article>
+              <article class="card__item">
+                <a href="#" class="card__img_block image-block"
+                  ><img
+                    class="card__img ibg"
+                    src="/images/9c451593c77016142eafee2c656afd52.webp"
+                /></a>
+                <div class="card__footer">
+                  <h4 class="label fs-16">05.02.2025</h4>
+                  <a href="#" class="hover-text-orange card__title">
+                    Masterclass Secures
+                  </a>
+                  <p class="description card__description">
+                    A young talent delivers an outstanding performance, making a
+                    strong case. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Laboriosam beatae numquam nisi
+                    exercitationem dolore fugit ut possimus labore consectetur?
+                    Ex?
                   </p>
                 </div>
               </article>
             </div>
+            <div class="pagination__section">
+              <a href="#" class="pag__item pag-item__active">1</a
+              ><a href="#" class="pag__item">2</a
+              ><a href="#" class="pag__item">3</a
+              ><a href="#" class="pag__item">4</a
+              ><a href="#" class="pag__item">5</a>
+            </div>
           </div>
         </section>
-      </div>
-      <div class="footer">
+      </main>
+      <footer class="footer">
         <div class="container">
           <div class="footer__content">
-            <a
-              class="footer__logo_link link-reset"
-              href="https://basketball-score.ca/"
-              ><img
-                class="footer__logo_img"
-                src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png"
+            <a class="footer__logo_link" href="https://basketball-score.ca/"
+              ><img class="footer__logo_img" src="/images/logo.png"
             /></a>
             <div class="footer__menu">
               <div class="footer-menu__item">
-                <a class="footer__link link-reset" href="#">about us</a
-                ><a class="footer__link link-reset" href="#">Sponsorship</a
-                ><a class="footer__link link-reset" href="#">Hall of Fame</a
-                ><a class="footer__link link-reset" href="#">Fan Shop</a
-                ><a class="footer__link link-reset" href="#">Tickets</a>
+                <a class="footer__link" href="#">about us</a
+                ><a class="footer__link" href="#">Sponsorship</a
+                ><a class="footer__link" href="#">Hall of Fame</a
+                ><a class="footer__link" href="#">Fan Shop</a
+                ><a class="footer__link" href="#">Tickets</a>
               </div>
               <div class="footer-menu__item">
-                <a class="footer__link link-reset" href="#">News</a
-                ><a class="footer__link link-reset" href="#">Highlights</a
-                ><a class="footer__link link-reset" href="#">Statistics</a
-                ><a class="footer__link link-reset" href="#">Standings</a
-                ><a class="footer__link link-reset" href="#">Schedule</a>
+                <a class="footer__link" href="#">News</a
+                ><a class="footer__link" href="#">Highlights</a
+                ><a class="footer__link" href="#">Statistics</a
+                ><a class="footer__link" href="#">Standings</a
+                ><a class="footer__link" href="#">Schedule</a>
               </div>
               <div class="footer-menu__item">
-                <a class="footer__link link-reset" href="#">Players</a
-                ><a class="footer__link link-reset" href="#">Teams</a
-                ><a class="footer__link link-reset" href="#">Terms of Service</a
-                ><a class="footer__link link-reset" href="#">Privacy Policy</a
-                ><a class="footer__link link-reset" href="#">Contact</a>
+                <a class="footer__link" href="#">Players</a
+                ><a class="footer__link" href="#">Teams</a
+                ><a class="footer__link" href="#">Terms of Service</a
+                ><a class="footer__link" href="#">Privacy Policy</a
+                ><a class="footer__link" href="#">Contact</a>
               </div>
             </div>
           </div>
@@ -300,7 +340,8 @@
             <span>© 2025. All rights reserved</span>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script type="module" src="/js/menuBurger.js"></script>
   </body>
 </html>
