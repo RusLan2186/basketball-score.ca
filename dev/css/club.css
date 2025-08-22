@@ -190,12 +190,6 @@
   }
 }
 
-@media (max-width: 799.98px) {
-  .cups__rows {
-    display: none;
-  }
-}
-
 @media (max-width: 767.98px) {
   .team-header__block {
     font-size: 40px;
@@ -203,6 +197,10 @@
 
   .club-header__logo {
     height: 90px;
+  }
+
+  .cups__rows {
+    display: none;
   }
 }
 
@@ -233,6 +231,6 @@
     font-size: 20px;
   }
   .cup__img {
-    height: 200px;
+    height: 180px;
   }
 }
