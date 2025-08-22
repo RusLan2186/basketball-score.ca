@@ -8,6 +8,8 @@
 @import 'full-video.css';
 @import 'clubs.css';
 @import 'footer.css';
+@import 'review.css';
+@import 'post.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -76,11 +78,23 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.title__block {
+  margin-bottom: 35px;
+}
+
+.title__block--sm {
+  margin-bottom: 20px;
+}
+
 .title {
   font-size: 40px;
   font-weight: 800;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
+}
+
+.title--sm {
+  font-size: 26px;
 }
 
 .description {
@@ -90,6 +104,10 @@ body {
   text-transform: capitalize;
 }
 
+.pos-sticky {
+  position: sticky;
+  top: 80px;
+}
 .link-block {
   position: relative;
   z-index: 10;
@@ -119,7 +137,9 @@ body {
 .text-orange {
   color: rgb(255, 127, 0);
 }
-
+.text-right {
+  text-align: right;
+}
 .grid-col-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -139,10 +159,6 @@ body {
   border-radius: 10px;
   font-size: 18px;
   text-transform: uppercase;
-}
-
-.title__block {
-  margin-bottom: 35px;
 }
 
 .grid-col-70-1fr {
@@ -209,6 +225,8 @@ body {
 
 .team-logo__small {
   height: 30px;
+  width: 30px;
+  object-fit: contain;
 }
 
 .team-logo-70 {
@@ -291,28 +309,11 @@ body {
 .contact__block:last-child {
   margin-bottom: 0;
 }
-.post__section {
-  margin-bottom: 50px;
-}
-.post__rows {
-  column-gap: 30px;
-}
-.post__img_block {
-  padding-bottom: 50%;
-  margin-bottom: 20px;
-}
-.post__img {
-  object-position: 100% 10%;
-}
-.post__text_block {
-  font-size: 17px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-}
+
 .sidebar__point-table__section {
   margin-bottom: 30px;
 }
-.point__table_header {
+/* .point__table_header {
   background: #ff7f00;
   display: grid;
   font-size: 16px;
@@ -320,11 +321,12 @@ body {
   grid-template-columns: 10% 40% repeat(5, 1fr);
   padding-bottom: 10px;
   padding-top: 10px;
+  padding-right: 10px;
   color: rgb(255, 255, 255);
   text-align: center;
   text-transform: uppercase;
-}
-.point__table_body {
+} */
+/* .point__table_body {
   align-items: center;
   display: grid;
   border-style: solid;
@@ -335,9 +337,10 @@ body {
   grid-template-columns: 10% 40% repeat(5, 1fr);
   padding-bottom: 10px;
   padding-top: 10px;
+    padding-right: 10px;
   color: rgb(255, 255, 255);
   text-align: center;
-}
+} */
 .sidebar__video_content {
   display: flex;
   flex-direction: column;
@@ -353,55 +356,13 @@ body {
 .video-post__img {
   object-position: 100% 10%;
 }
-.reviews__section {
-  margin-bottom: 50px;
-}
-.reviews__rows {
-  column-gap: 20px;
-}
+
 .grid-col-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.reviews__block {
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(255, 127, 0);
-  border-radius: 5px;
-}
-.reviews-block__head {
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(255, 127, 0);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  color: rgb(255, 255, 255);
-}
-.reviews__best_block {
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(255, 127, 0);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.reviews-best__items {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-.best-player__info {
+
+/* .best-player__info {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -414,44 +375,18 @@ body {
 }
 .best-player__photo {
   height: 90px;
-}
+} */
 .fs-20 {
   font-size: 20px;
 }
-.best-player__stat {
+/* .best-player__stat {
   font-size: 17px;
   color: rgb(255, 255, 255);
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-}
-.reviews__stat_section {
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(255, 127, 0);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-}
-.reviews__stat_content {
-  display: flex;
-  flex-direction: column;
-  row-gap: 12px;
-}
-.reviews__stat_item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 500;
-  column-gap: 10px;
-  color: rgb(255, 255, 255);
-}
+} */
+
 .pb-60prc {
   padding-bottom: 60%;
 }
@@ -894,7 +829,7 @@ body {
     width: 100%;
   }
 
-  .title {
+  .title, .title--sm {
     font-size: 26px;
   }
 }

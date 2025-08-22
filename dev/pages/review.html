@@ -1,210 +1,618 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>review</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a review page." />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="container">
-          <div class="header__content"><a class="link-reset header__logo_link" href="https://basketball-score.ca/"><img class="header__logo_img" src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png" /></a>
-            <div class="header__menu">
-              <ul class="header__menu_list reset">
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/news">news</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/post">post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/video-post">video-post</a></li>
-                <li><a class="header__menu_link link-reset link-active" href="https://basketball-score.ca/reviews">reviews</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/calendar">calendar</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/statistics">statistics</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/results">results</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/videos">videos</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/lives">lives</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/team">team</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/teams">teams</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/player">player</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/contact">contact</a></li>
+          <div class="header__content">
+            <a class="header__logo_link" href="/">
+              <img
+                class="header__logo_img"
+                alt="logo"
+                src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/news.html">news</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/lives.html">lives</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/club.html">club</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/clubs.html">clubs</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="reviews__section">
+      </header>
+      <main class="main">
+        <section class="review-head__section section--with-pdng section">
           <div class="container">
-            <div class="title__block">
-              <h2 class="title">reviews <span class="text-orange">matches</span></h2>
-            </div>
-            <div class="reviews__rows grid-col-3">
-              <div class="reviews__block">
-                <div class="reviews-block__head">
-                  <div class="match__header">
-                    <h4 class="label">nba</h4><span class="text-bold">05.02.2025 | 20.00</span>
-                  </div>
-                  <div class="match__body"><a href="#" class="link-reset match__team_block"><img class="match__team_logo" src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png" /><span>boston</span></a>
-                    <p class="reset match__score">110:105</p><a href="#" class="link-reset match__team_block"><img class="match__team_logo" src="/images/4397dd6e7bbd7ed711140ea96967ba18.png" /><span>brouklyn</span></a>
-                  </div>
+            <div class="review-head__content">
+              <div class="review-head__block">
+                <div class="review-head__date">
+                  <p class="text-orange">april 21, 2025</p>
+                  <p>20 : 00</p>
                 </div>
-                <div class="reviews__best_block">
-                  <h3 class="text-orange fs-22 text-bold">Top Performers</h3>
-                  <div class="reviews-best__items">
-                    <div class="reviews-best__item"><a href="#" class="link-reset best-player__info hover-text-orange"><span class="fs-20">Nikola Jokić</span><img src="/images/11a26525778efc1dcf9ab457b1881c5c.png" class="best-player__photo" /></a>
-                      <div class="best-player__stat">
-                        <p class="reset">32 points</p>
-                        <p class="reset">10 rebounds</p>
-                        <p class="reset">7 assists</p>
-                      </div>
-                    </div>
-                    <div class="reviews-best__item"><a href="#" class="link-reset best-player__info hover-text-orange"><span class="fs-20">Luka Dončić</span><img src="/images/ab89868cae7f099c04d1a2b911eea94f.png" class="best-player__photo" /></a>
-                      <div class="best-player__stat">
-                        <p class="reset">28 points</p>
-                        <p class="reset">8 rebounds</p>
-                        <p class="reset">5 assists</p>
-                      </div>
-                    </div>
+                <div class="review-head__teams_block">
+                  <a
+                    href="#"
+                    class="hover-text review-head__team_block hover-text-orange"
+                    ><img
+                      class="review-head__logo"
+                      src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png"
+                    /><span>boston</span></a
+                  >
+                  <div class="review-head__score">
+                    <p class="text-orange">100 : 94</p>
                   </div>
+                  <a
+                    href="#"
+                    class="hover-text review-head__team_block hover-text-orange"
+                    ><img
+                      class="review-head__logo"
+                      src="/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png"
+                    /><span>toronto</span></a
+                  >
                 </div>
-                <div class="reviews__stat_section">
-                  <h3 class="text-orange fs-22 text-bold">statistics</h3>
-                  <div class="reviews__stat_content">
-                    <div class="reviews__stat_item"><span>47%</span><span>Field Goal Percentage</span><span>53%</span></div>
-                    <div class="reviews__stat_item"><span>12/30 (40%)</span><span>Three-Pointers</span><span>14/35 (40%)</span></div>
-                    <div class="reviews__stat_item"><span>18/22 (82%)</span><span>Free Throws</span><span>16/20 (80%)</span></div>
-                    <div class="reviews__stat_item"><span>36</span><span>Rebouts</span><span>44</span></div>
-                    <div class="reviews__stat_item"><span>28</span><span>Assists</span><span>26</span></div>
-                    <div class="reviews__stat_item"><span>12</span><span>Turnovers</span><span>11</span></div>
-                    <div class="reviews__stat_item"><span>9</span><span>Steals</span><span>7</span></div>
-                    <div class="reviews__stat_item"><span>6</span><span>Blocks</span><span>8</span></div>
-                  </div>
-                </div><a href="#" class="link-reset news__item hover-text-orange">
-                  <div class="image-block pb-60prc"><img class="news__big_img ibg" src="/images/d441469470ff573a3ccd043093bd8e4b.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                  <div class="news-_text_block">
-                    <h3 class="news__title fs-22">the best moments of the match</h3>
-                  </div>
-                  <div class="overlay ibg"></div>
-                </a>
               </div>
-              <div class="reviews__block">
-                <div class="reviews-block__head">
-                  <div class="match__header">
-                    <h4 class="label">nba</h4><span class="text-bold">07.02.2025 | 01.30</span>
+              <div class="review-head__video_block">
+                <a href="#" class="news__item hover-text-orange">
+                  <div class="image-block review-head__video__img-block">
+                    <img
+                      class="news__big_img ibg"
+                      src="/images/49478a35866cbdf9f3c78e36cc9c5391.webp"
+                    /><img
+                      class="play__icon hover-scale"
+                      src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                    />
                   </div>
-                  <div class="match__body"><a href="#" class="link-reset match__team_block"><img class="match__team_logo" src="/images/30212b6c879b12b2e897964e144214ab.png" /><span>kniks</span></a>
-                    <p class="reset match__score">100:111</p><a href="#" class="link-reset match__team_block"><img class="match__team_logo" src="/images/e772f7594eee29f213175e86cb454918.png" /><span>miami</span></a>
-                  </div>
-                </div>
-                <div class="reviews__best_block">
-                  <h3 class="text-orange fs-22 text-bold">Top Performers</h3>
-                  <div class="reviews-best__items">
-                    <div class="reviews-best__item"><a href="#" class="link-reset best-player__info hover-text-orange"><span class="fs-20">Kevin Durant</span><img src="/images/56782ba962415d4544e70c4fa0ee54cb.png" class="best-player__photo" /></a>
-                      <div class="best-player__stat">
-                        <p class="reset">32 points</p>
-                        <p class="reset">10 rebounds</p>
-                        <p class="reset">7 assists</p>
-                      </div>
-                    </div>
-                    <div class="reviews-best__item"><a href="#" class="link-reset best-player__info hover-text-orange"><span class="fs-20">Stephen Curry</span><img src="/images/673bf3565d273889092a89db50fee650.webp" class="best-player__photo" /></a>
-                      <div class="best-player__stat">
-                        <p class="reset">28 points</p>
-                        <p class="reset">8 rebounds</p>
-                        <p class="reset">5 assists</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="reviews__stat_section">
-                  <h3 class="text-orange fs-22 text-bold">statistics</h3>
-                  <div class="reviews__stat_content">
-                    <div class="reviews__stat_item"><span>47%</span><span>Field Goal Percentage</span><span>53%</span></div>
-                    <div class="reviews__stat_item"><span>12/30 (40%)</span><span>Three-Pointers</span><span>14/35 (40%)</span></div>
-                    <div class="reviews__stat_item"><span>18/22 (82%)</span><span>Free Throws</span><span>16/20 (80%)</span></div>
-                    <div class="reviews__stat_item"><span>36</span><span>Rebouts</span><span>44</span></div>
-                    <div class="reviews__stat_item"><span>28</span><span>Assists</span><span>26</span></div>
-                    <div class="reviews__stat_item"><span>12</span><span>Turnovers</span><span>11</span></div>
-                    <div class="reviews__stat_item"><span>9</span><span>Steals</span><span>7</span></div>
-                    <div class="reviews__stat_item"><span>6</span><span>Blocks</span><span>8</span></div>
-                  </div>
-                </div><a href="#" class="link-reset news__item hover-text-orange">
-                  <div class="image-block pb-60prc"><img class="news__big_img ibg" src="/images/f1ac0fb455b8d40ebd61e1320387601c.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                  <div class="news-_text_block">
-                    <h3 class="news__title fs-22">the best moments of the match</h3>
-                  </div>
-                  <div class="overlay ibg"></div>
-                </a>
-              </div>
-              <div class="reviews__block">
-                <div class="reviews-block__head">
-                  <div class="match__header">
-                    <h4 class="label">nba</h4><span class="text-bold">08.02.2025 | 02.00</span>
-                  </div>
-                  <div class="match__body"><a href="#" class="link-reset match__team_block"><img class="match__team_logo" src="/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png" /><span>toronto</span></a>
-                    <p class="reset match__score">97:88</p><a href="#" class="link-reset match__team_block"><img class="match__team_logo" src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png" /><span>boston</span></a>
-                  </div>
-                </div>
-                <div class="reviews__best_block">
-                  <h3 class="text-orange fs-22 text-bold">Top Performers</h3>
-                  <div class="reviews-best__items">
-                    <div class="reviews-best__item"><a href="#" class="link-reset best-player__info hover-text-orange"><span class="fs-20">maxim front</span><img src="/images/ab89868cae7f099c04d1a2b911eea94f.png" class="best-player__photo" /></a>
-                      <div class="best-player__stat">
-                        <p class="reset">32 points</p>
-                        <p class="reset">10 rebounds</p>
-                        <p class="reset">7 assists</p>
-                      </div>
-                    </div>
-                    <div class="reviews-best__item"><a href="#" class="link-reset best-player__info hover-text-orange"><span class="fs-20">alex bolton</span><img src="/images/56782ba962415d4544e70c4fa0ee54cb.png" class="best-player__photo" /></a>
-                      <div class="best-player__stat">
-                        <p class="reset">28 points</p>
-                        <p class="reset">8 rebounds</p>
-                        <p class="reset">5 assists</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="reviews__stat_section">
-                  <h3 class="text-orange fs-22 text-bold">statistics</h3>
-                  <div class="reviews__stat_content">
-                    <div class="reviews__stat_item"><span>47%</span><span>Field Goal Percentage</span><span>53%</span></div>
-                    <div class="reviews__stat_item"><span>12/30 (40%)</span><span>Three-Pointers</span><span>14/35 (40%)</span></div>
-                    <div class="reviews__stat_item"><span>18/22 (82%)</span><span>Free Throws</span><span>16/20 (80%)</span></div>
-                    <div class="reviews__stat_item"><span>36</span><span>Rebouts</span><span>44</span></div>
-                    <div class="reviews__stat_item"><span>28</span><span>Assists</span><span>26</span></div>
-                    <div class="reviews__stat_item"><span>12</span><span>Turnovers</span><span>11</span></div>
-                    <div class="reviews__stat_item"><span>9</span><span>Steals</span><span>7</span></div>
-                    <div class="reviews__stat_item"><span>6</span><span>Blocks</span><span>8</span></div>
-                  </div>
-                </div><a href="#" class="link-reset news__item hover-text-orange">
-                  <div class="image-block pb-60prc"><img class="news__big_img ibg" src="/images/9c451593c77016142eafee2c656afd52.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                  <div class="news-_text_block">
-                    <h3 class="news__title fs-22">the best moments of the match</h3>
+                  <div class="news-text__block">
+                    <h3 class="news__item_title">highlights</h3>
                   </div>
                   <div class="overlay ibg"></div>
                 </a>
               </div>
             </div>
-            <div class="pagination__section"><a href="#" class="link-reset pag__item pag-item__active">1</a><a href="#" class="link-reset pag__item">2</a><a href="#" class="link-reset pag__item">3</a><a href="#" class="link-reset pag__item">4</a><a href="#" class="link-reset pag__item">5</a></div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+        <section class="review__content content-review section">
+          <div class="container">
+            <div class="content-review__rows">
+              <div class="content-review__stats">
+                <div class="title__block title__block--sm">
+                  <h2 class="title title--sm">
+                    Boston Celtics <span class="fs-22"> vs </span>
+                    <span class="text-orange">toronto Raptors</span>
+                  </h2>
+                </div>
+                <div
+                  class="game-stat"
+                  data-stat="item-game-stat__line"
+                  data-stat-gap="5"
+                >
+                  <div class="game-stat__body">
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          112
+                        </div>
+                        <div class="item-game-stat__label">Points</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          107
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--1"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          34
+                        </div>
+                        <div class="item-game-stat__label">Rebounds</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          41
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          24
+                        </div>
+                        <div class="item-game-stat__label">Assists</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          18
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          8
+                        </div>
+                        <div class="item-game-stat__label">Steals</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          3
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          2
+                        </div>
+                        <div class="item-game-stat__label">Blocks</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          5
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          11
+                        </div>
+                        <div class="item-game-stat__label">Turnovers</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          7
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          15
+                        </div>
+                        <div class="item-game-stat__label">Bench Points</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          27
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          46
+                        </div>
+                        <div class="item-game-stat__label">Field Goal %</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          54
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          37
+                        </div>
+                        <div class="item-game-stat__label">3-Point %</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          53
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                    <div data-stat-item class="game-stat__item item-game-stat">
+                      <div class="item-game-stat__top">
+                        <div data-stat-value class="item-game-stat__value">
+                          77
+                        </div>
+                        <div class="item-game-stat__label">Free Throw %</div>
+                        <div data-stat-value class="item-game-stat__value">
+                          69
+                        </div>
+                      </div>
+                      <div
+                        data-stat-row
+                        class="item-game-stat__row item-game-stat__row--2"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-aside">
+                <div class="review-aside__content pos-sticky">
+                  <div class="review-aside__info">
+                    <div class="title__block title__block--sm">
+                      <h2 class="title title--sm">
+                        game <span class="text-orange">info</span>
+                      </h2>
+                    </div>
+                    <div class="flx-clmn game-info__wrap">
+                      <div class="game-info__item">
+                        <span>date</span
+                        ><span class="text-orange"> April 21, 2025</span>
+                      </div>
+                      <div class="game-info__item">
+                        <span>Location</span
+                        ><span class="text-orange text-right">
+                          New York NY</span
+                        >
+                      </div>
+                      <div class="game-info__item">
+                        <span>arena</span
+                        ><span class="text-orange">Madison Square Garden</span>
+                      </div>
+                      <div class="game-info__item">
+                        <span>Officials</span
+                        ><span class="text-orange text-right"
+                          >Curtis Blair, Josh Tiven, Scott Twardoski</span
+                        >
+                      </div>
+                      <div class="game-info__item flx-btwn">
+                        <span>date</span
+                        ><span class="text-orange"> April 21, 2025</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-aside__linescores">
+                    <div class="title__block title__block--sm">
+                      <h2 class="title title--sm">
+                        game <span class="text-orange">linescores</span>
+                      </h2>
+                    </div>
+                    <div class="linescores__content">
+                      <div class="table__wrap">
+                        <div class="tbl__head grid-cols-6">
+                          <span>team</span><span>01</span><span>02</span
+                          ><span>03</span><span>04</span><span>final</span>
+                        </div>
+                        <div class="tbl__body grid-cols-6">
+                          <a
+                            href="#"
+                            class="hover-text-orange table__team_block"
+                            ><img
+                              class="table__team_logo"
+                              src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png"
+                            /><span>bos</span></a
+                          ><span>25</span><span>30</span><span>20</span
+                          ><span>25</span><span>100</span>
+                        </div>
+                        <div class="tbl__body grid-cols-6">
+                          <a
+                            href="#"
+                            class="hover-text-orange table__team_block"
+                            ><img
+                              class="table__team_logo"
+                              src="/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png"
+                            /><span>tor</span></a
+                          ><span>18</span><span>31</span><span>18</span
+                          ><span>27</span><span>94</span>
+                        </div>
+                      </div>
+                      <div class="table__wrap">
+                        <div class="grid-cols-6 tbl__head">
+                          <span>team</span>
+                          <span>PITP</span>
+                          <span>PTS</span>
+                          <span>LD</span><span>TOV</span><span>POT</span>
+                        </div>
+                        <div class="grid-cols-6 tbl__body">
+                          <a
+                            href="#"
+                            class="hover-text-orange table__team_block"
+                          >
+                            <img
+                              class="table__team_logo"
+                              src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png"
+                            />
+                            <span>bos</span></a
+                          ><span>46</span><span>15</span><span>15</span
+                          ><span>35</span><span>5</span>
+                        </div>
+                        <div class="grid-cols-6 tbl__body">
+                          <a
+                            href="#"
+                            class="hover-text-orange table__team_block"
+                          >
+                            <img
+                              class="table__team_logo"
+                              src="/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png"
+                            />
+                            <span>tor</span></a
+                          ><span>40</span><span>14</span><span>14</span
+                          ><span>0</span><span>19</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="review__post_section section">
+          <div class="container">
+            <div class="review-post__rows">
+              <div class="post__content">
+                <div class="title__block title__block--sm">
+                  <h2 class="title title--sm">
+                    Intense Basketball Clash Ends in
+                    <span class="text-orange">Dramatic Fashion</span>
+                  </h2>
+                </div>
+                <div class="post__img_block image-block">
+                  <img
+                    class="post__img ibg"
+                    src="/images/d7eb815cc3d86560c96edac50663a417.jpeg"
+                  />
+                </div>
+                <div class="post__text_block">
+                  <p>
+                    The latest basketball showdown delivered everything a fan
+                    could ask for—intensity, skill, and a breathtaking finish.
+                    From the opening tip-off, both teams showcased incredible
+                    energy, trading baskets and keeping the crowd on the edge of
+                    their seats.
+                  </p>
+                  <p>
+                    The first half saw a tactical battle, with sharp defensive
+                    plays and fast-paced offensive transitions defining the
+                    game. One side dominated from beyond the arc, sinking
+                    multiple three-pointers, while the opposition relied on
+                    aggressive drives to the basket and solid mid-range
+                    shooting. Despite multiple lead changes, neither team
+                    managed to establish a comfortable advantage before
+                    halftime.
+                  </p>
+                  <p>
+                    The third quarter turned into a display of resilience. One
+                    team went on a scoring run, fueled by precise ball movement
+                    and high-pressure defense, building what seemed like a
+                    decisive lead. However, the opposition responded with clutch
+                    shooting and crucial stops, setting the stage for an
+                    unforgettable final stretch. With the game on the line, the
+                    final minutes were a test of composure. Every possession
+                    carried weight, with players stepping up under pressure.
+                  </p>
+                </div>
+              </div>
+              <aside class="sidebar review-aside">
+                <div class="review-aside__pts-table pos-sticky">
+                  <div class="title__block title__block--sm">
+                    <h2 class="title title--sm">
+                      points
+                      <span class="text-orange">table</span>
+                    </h2>
+                  </div>
+                  <div class="point__table">
+                    <div class="point-table__header grid-pts-table--sm">
+                      <span>#</span><span class="text-left">team</span
+                      ><span>GP </span><span>w</span><span>d</span><span>l</span
+                      ><span>pts</span>
+                    </div>
+                    <div class="point-table__body grid-pts-table--sm">
+                      <span class="text-bold">1.</span
+                      ><a
+                        href="#"
+                        class="hover-text-orange  point-table__team_block"
+                        ><img
+                          class="team-logo__small"
+                          src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png"
+                        /><span>boston </span></a
+                      ><span>37</span><span>30</span><span>5</span><span>4</span
+                      ><span class="text-bold">37</span>
+                    </div>
+                    <div class="point-table__body grid-pts-table--sm">
+                      <span class="text-bold">2.</span
+                      ><a
+                        href="#"
+                        class="hover-text-orange link-reset point-table__team_block"
+                        ><img
+                          class="team-logo__small"
+                          src="/images/30212b6c879b12b2e897964e144214ab.png"
+                        /><span>kniks</span></a
+                      ><span>37</span><span>28</span><span>7</span><span>6</span
+                      ><span class="text-bold">35</span>
+                    </div>
+                    <div class="point-table__body grid-pts-table--sm">
+                      <span class="text-bold">3.</span
+                      ><a
+                        href="#"
+                        class="hover-text-orange link-reset point-table__team_block"
+                        ><img
+                          class="team-logo__small"
+                          src="/images/31fbc163e6d321a10053d1538bdc2f15.png"
+                        /><span>philad</span></a
+                      ><span>37</span><span>25</span><span>9</span><span>7</span
+                      ><span class="text-bold">32</span>
+                    </div>
+                    <div class="point-table__body grid-pts-table--sm">
+                      <span class="text-bold">4.</span
+                      ><a
+                        href="#"
+                        class="hover-text-orange link-reset point-table__team_block"
+                        ><img
+                          class="team-logo__small"
+                          src="/images/e772f7594eee29f213175e86cb454918.png"
+                        /><span>miami</span></a
+                      ><span>37</span><span>22</span><span>11</span
+                      ><span>5</span><span class="text-bold">29</span>
+                    </div>
+                    <div class="point-table__body grid-pts-table--sm">
+                      <span class="text-bold">5.</span
+                      ><a
+                        href="#"
+                        class="hover-text-orange link-reset point-table__team_block"
+                        ><img
+                          class="team-logo__small"
+                          src="/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png"
+                        /><span>toronto</span></a
+                      ><span>37</span><span>19</span><span>14</span
+                      ><span>9</span><span class="text-bold">24</span>
+                    </div>
+                    <div class="point-table__body grid-pts-table--sm">
+                      <span class="text-bold">6.</span
+                      ><a
+                        href="#"
+                        class="hover-text-orange link-reset point-table__team_block"
+                        ><img
+                          class="team-logo__small"
+                          src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png"
+                        /><span>boston </span></a
+                      ><span>37</span><span>30</span><span>5</span><span>4</span
+                      ><span class="text-bold">21</span>
+                    </div>
+                    <div class="point-table__body grid-pts-table--sm">
+                      <span class="text-bold">7.</span
+                      ><a
+                        href="#"
+                        class="hover-text-orange link-reset point-table__team_block"
+                        ><img
+                          class="team-logo__small"
+                          src="/images/30212b6c879b12b2e897964e144214ab.png"
+                        /><span>kniks</span></a
+                      ><span>37</span><span>28</span><span>7</span><span>6</span
+                      ><span class="text-bold">20</span>
+                    </div>
+                    <div class="point-table__body grid-pts-table--sm">
+                      <span class="text-bold">8.</span
+                      ><a
+                        href="#"
+                        class="hover-text-orange link-reset point-table__team_block"
+                        ><img
+                          class="team-logo__small"
+                          src="/images/31fbc163e6d321a10053d1538bdc2f15.png"
+                        /><span>philad</span></a
+                      ><span>37</span><span>25</span><span>9</span><span>7</span
+                      ><span class="text-bold">18</span>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__content"><a class="footer__logo_link link-reset" href="https://basketball-score.ca/"><img class="footer__logo_img" src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png" /></a>
+          <div class="footer__content">
+            <a class="footer__logo_link" href="https://basketball-score.ca/"
+              ><img class="footer__logo_img" src="/images/logo.png"
+            /></a>
             <div class="footer__menu">
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">about us</a><a class="footer__link link-reset" href="#">Sponsorship</a><a class="footer__link link-reset" href="#">Hall of Fame</a><a class="footer__link link-reset" href="#">Fan Shop</a><a class="footer__link link-reset" href="#">Tickets</a></div>
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">News</a><a class="footer__link link-reset" href="#">Highlights</a><a class="footer__link link-reset" href="#">Statistics</a><a class="footer__link link-reset" href="#">Standings</a><a class="footer__link link-reset" href="#">Schedule</a></div>
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">Players</a><a class="footer__link link-reset" href="#">Teams</a><a class="footer__link link-reset" href="#">Terms of Service</a><a class="footer__link link-reset" href="#">Privacy Policy</a><a class="footer__link link-reset" href="#">Contact</a></div>
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">about us</a
+                ><a class="footer__link" href="#">Sponsorship</a
+                ><a class="footer__link" href="#">Hall of Fame</a
+                ><a class="footer__link" href="#">Fan Shop</a
+                ><a class="footer__link" href="#">Tickets</a>
+              </div>
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">News</a
+                ><a class="footer__link" href="#">Highlights</a
+                ><a class="footer__link" href="#">Statistics</a
+                ><a class="footer__link" href="#">Standings</a
+                ><a class="footer__link" href="#">Schedule</a>
+              </div>
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">Players</a
+                ><a class="footer__link" href="#">Teams</a
+                ><a class="footer__link" href="#">Terms of Service</a
+                ><a class="footer__link" href="#">Privacy Policy</a
+                ><a class="footer__link" href="#">Contact</a>
+              </div>
             </div>
           </div>
-          <div class="footer__btm"><span>© 2025. All rights reserved</span></div>
+          <div class="footer__btm">
+            <span>© 2025. All rights reserved</span>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/review-stat-table.js"></script>
   </body>
-
 </html>

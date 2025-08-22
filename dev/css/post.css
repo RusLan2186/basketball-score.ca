@@ -1,0 +1,27 @@
+.post__rows {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  column-gap: 30px;
+}
+.post__img_block {
+  padding-bottom: 50%;
+  margin-bottom: 20px;
+}
+.post__img {
+  object-position: 100% 10%;
+}
+.post__text_block {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.post__text_block > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 499.98px) {
+  .post__img_block {
+    padding-bottom: 60%;
+  }
+}

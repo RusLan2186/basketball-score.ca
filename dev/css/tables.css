@@ -2,7 +2,23 @@
   grid-template-columns: 1fr 20% repeat(12, 1fr);
 }
 
-.point-table__header {
+.grid-pts-table--sm {
+  display: grid;
+  grid-template-columns: 10% 40% repeat(5, 1fr);
+}
+
+.grid-cols-6 {
+  display: grid;
+  grid-template-columns: 30% repeat(5, 1fr);
+}
+
+.grid-cols-9 {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.point-table__header,
+.tbl__head {
   background: #ff7f00;
   display: grid;
   font-size: 16px;
@@ -15,7 +31,8 @@
   text-transform: uppercase;
 }
 
-.point-table__body {
+.point-table__body,
+.tbl__body {
   align-items: center;
   display: grid;
   font-size: 16px;
@@ -29,7 +46,13 @@
   text-align: center;
 }
 
-.point-table__team_block {
+.point-table__header.grid-pts-table--sm,
+.point-table__body.grid-pts-table--sm {
+  padding-right: 10px;
+}
+
+.point-table__team_block,
+.table__team_block {
   align-items: center;
   display: flex;
   column-gap: 10px;
@@ -39,7 +62,12 @@
   text-transform: uppercase;
 }
 
-.points-table__team_logo {
+.table__team_block {
+  padding-left: 15px;
+}
+
+.points-table__team_logo,
+.table__team_logo {
   height: 30px;
   width: 30px;
   object-fit: contain;
@@ -50,7 +78,7 @@
     overflow: scroll;
   }
 
-    .pts__table::-webkit-scrollbar {
+  .pts__table::-webkit-scrollbar {
     width: 0px;
   }
 
@@ -115,7 +143,7 @@
     grid-template-columns: 30px 170px repeat(12, 1fr);
   }
 
-  .point-table__header {
+  .point-table__header.grid-pts-tbl {
     font-size: 11px;
   }
 
