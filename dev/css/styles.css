@@ -11,6 +11,7 @@
 @import 'review.css';
 @import 'post.css';
 @import 'club.css';
+@import 'player.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -25,7 +26,7 @@ body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
   font-size: 16px;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
@@ -197,7 +198,6 @@ body {
   font-size: 16px;
 }
 .overlay {
-
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 0%,
@@ -396,122 +396,8 @@ body {
   text-align: center;
 }
 
-.arrow {
-  height: 25px;
-  margin-left: 7px;
-}
 
-.player-info__section {
-  margin-bottom: 50px;
-}
-.player-info__rows {
-  column-gap: 20px;
-}
-.player-stat__block {
-  box-shadow: 0px 0px 4px rgb(255, 127, 0);
-}
-.player-stat__item {
-  display: grid;
-  grid-template-columns: 50% 1fr;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: 600;
-  padding-bottom: 17px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 17px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(255, 127, 0);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  align-items: center;
-}
-.player-stat__item:last-child {
-  border-style: none;
-}
-.progress {
-  background-color: rgb(97, 97, 97);
-  width: 100%;
-  position: relative;
-  height: 20px;
-}
-.progress::after {
-  background: #ff7f00;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 80%;
-  height: 100%;
-}
-.player-stat__progress {
-  align-items: center;
-  font-size: 17px;
-  font-weight: 600;
-  display: grid;
-  grid-template-columns: 25% 1fr 25%;
-  padding-bottom: 17px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 17px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(255, 127, 0);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-}
-.text-center {
-  text-align: center;
-}
-.progress-52::after {
-  width: 52%;
-}
-.progress-92::after {
-  width: 92%;
-}
-.progress-74::after {
-  width: 74%;
-}
-.bio__section {
-  margin-bottom: 50px;
-}
-.player__stat-table_section {
-  margin-bottom: 50px;
-}
-.player-table__header {
-  background: #ff7f00;
-  display: grid;
-  font-size: 16px;
-  font-weight: 600;
-  grid-template-columns: 10% repeat(25, 1fr);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-transform: uppercase;
-}
-.player-table__body {
-  align-items: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(255, 127, 0);
-  border-top-width: 0;
-  display: grid;
-  font-size: 16px;
-  font-weight: 400;
-  grid-template-columns: 10% repeat(25, 1fr);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-transform: uppercase;
-}
+
 .lives__section {
   margin-bottom: 50px;
 }

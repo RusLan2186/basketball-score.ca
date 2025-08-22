@@ -1,236 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>player</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a player page." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="container">
-          <div class="header__content"><a class="link-reset header__logo_link" href="https://basketball-score.ca/"><img class="header__logo_img" src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png" /></a>
-            <div class="header__menu">
-              <ul class="header__menu_list reset">
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/news">news</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/post">post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/video-post">video-post</a></li>
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/reviews">reviews</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/calendar">calendar</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/statistics">statistics</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/results">results</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/videos">videos</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/lives">lives</a></li>
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/team">team</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/teams">teams</a></li>
-                <li><a class="header__menu_link link-reset link-active" href="https://basketball-score.ca/player">player</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/contact">contact</a></li>
+          <div class="header__content">
+            <a class="header__logo_link" href="/">
+              <img
+                class="header__logo_img"
+                alt="logo"
+                src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/news.html">news</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/lives.html">lives</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/club.html">club</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/clubs.html">clubs</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="player-info__section">
+      </header>
+      <main class="main">
+        <section class="player-info__section section section--with-pdng">
           <div class="container">
             <div class="title__block">
-              <h2 class="title">player <span class="text-orange">info</span></h2>
+              <h2 class="title">
+                player <span class="text-orange">info</span>
+              </h2>
             </div>
-            <div class="player-info__rows grid-col-3">
-              <div class="player__card"><a href="#" class="link-reset player__img_block image-block">10<img class="player__img ibg hover-scale" src="/images/bf4fbff951b465954b2f3eee83f8fe98.webp" /></a>
-                <div class="player-card__footer">
-                  <div><a href="#" class="hover-text-orange link-reset player__name">jacob toppin</a>
-                    <p class="reset text-orange">forward</p>
+            <div class="player-info__rows">
+              <div class="player__card">
+                <a href="#" class="player__img_block image-block"
+                  >10<img
+                    class="player__img ibg hover-scale"
+                    src="/images/bf4fbff951b465954b2f3eee83f8fe98.webp"
+                /></a>
+                <div class="player-card__info">
+                  <div>
+                    <a href="#" class="hover-text-orange player__name"
+                      >jacob toppin</a
+                    >
+                    <p class="text-orange">forward</p>
                   </div>
                 </div>
               </div>
               <div class="player-stat__block">
-                <div class="player-stat__item"><span>Date of Birth:</span><span class="text-bold text-orange">2001</span></div>
-                <div class="player-stat__item"><span>Place of Birth</span><span class="text-bold text-orange">new york, usa</span></div>
-                <div class="player-stat__item"><span>age</span><span class="text-bold text-orange">26</span></div>
-                <div class="player-stat__item"><span>MATCHES</span><span class="text-bold text-orange">157</span></div>
-                <div class="player-stat__item"><span>GOAL</span><span class="text-bold text-orange">456</span></div>
-                <div class="player-stat__item"><span>ASSIST</span><span class="text-bold text-orange">256</span></div>
-                <div class="player-stat__item"><span>HEIGHT</span><span class="text-bold text-orange">198</span></div>
-                <div class="player-stat__item"><span>weight</span><span class="text-bold text-orange">89</span></div>
+                <div class="player-stat__item">
+                  <span>Date of Birth:</span
+                  ><span class="text-bold text-orange">2001</span>
+                </div>
+                <div class="player-stat__item">
+                  <span>Place of Birth</span
+                  ><span class="text-bold text-orange">new york, usa</span>
+                </div>
+                <div class="player-stat__item">
+                  <span>age</span><span class="text-bold text-orange">26</span>
+                </div>
+                <div class="player-stat__item">
+                  <span>MATCHES</span
+                  ><span class="text-bold text-orange">157</span>
+                </div>
+                <div class="player-stat__item">
+                  <span>GOAL</span
+                  ><span class="text-bold text-orange">456</span>
+                </div>
+                <div class="player-stat__item">
+                  <span>ASSIST</span
+                  ><span class="text-bold text-orange">256</span>
+                </div>
+                <div class="player-stat__item">
+                  <span>HEIGHT</span
+                  ><span class="text-bold text-orange">198</span>
+                </div>
+                <div class="player-stat__item">
+                  <span>weight</span
+                  ><span class="text-bold text-orange">89</span>
+                </div>
               </div>
               <div class="player-stat__block">
-                <div class="player-stat__progress"><span>speed</span>
-                  <div class="progress"></div><span class="text-orange text-center">80%</span>
+                <div class="player-stat__progress">
+                  <span>speed</span>
+                  <div class="progress__line">
+                    <div class="progress__line_active"></div>
+                  </div>
+                  <span class="progress__value">69%</span>
                 </div>
-                <div class="player-stat__progress"><span>STAMINA</span>
-                  <div class="progress progress-52"></div><span class="text-orange text-center">52%</span>
+                <div class="player-stat__progress">
+                  <span>STAMINA</span>
+                  <div class="progress__line">
+                    <div class="progress__line_active"></div>
+                  </div>
+                  <span class="progress__value">52%</span>
                 </div>
-                <div class="player-stat__progress"><span>ABILITY</span>
-                  <div class="progress progress-92"></div><span class="text-orange text-center">92%</span>
+                <div class="player-stat__progress">
+                  <span>ABILITY</span>
+                  <div class="progress__line">
+                    <div class="progress__line_active"></div>
+                  </div>
+                  <span class="progress__value">92%</span>
                 </div>
-                <div class="player-stat__progress"><span>covering</span>
-                  <div class="progress progress-74"></div><span class="text-orange text-center">74%</span>
+                <div class="player-stat__progress">
+                  <span>covering</span>
+                  <div class="progress__line">
+                    <div class="progress__line_active"></div>
+                  </div>
+                  <span class="progress__value">50%</span>
                 </div>
-                <div class="player-stat__progress"><span>Strength</span>
-                  <div class="progress"></div><span class="text-orange text-center">80%</span>
+                <div class="player-stat__progress">
+                  <span>Strength</span>
+                  <div class="progress__line">
+                    <div class="progress__line_active"></div>
+                  </div>
+                  <span class="progress__value">80%</span>
                 </div>
-                <div class="player-stat__progress"><span>Agility</span>
-                  <div class="progress progress-52"></div><span class="text-orange text-center">52%</span>
+                <div class="player-stat__progress">
+                  <span>Agility</span>
+                  <div class="progress__line">
+                    <div class="progress__line_active"></div>
+                  </div>
+                  <span class="progress__value">52%</span>
                 </div>
-                <div class="player-stat__progress"><span>Vision</span>
-                  <div class="progress progress-92"></div><span class="text-orange text-center">92%</span>
+                <div class="player-stat__progress">
+                  <span>Vision</span>
+                  <div class="progress__line">
+                    <div class="progress__line_active"></div>
+                  </div>
+                  <span class="progress__value">92%</span>
                 </div>
-                <div class="player-stat__progress"><span>Tactics</span>
-                  <div class="progress progress-74"></div><span class="text-orange text-center">74%</span>
+                <div class="player-stat__progress">
+                  <span>Tactics</span>
+                  <div class="progress__line">
+                    <div class="progress__line_active"></div>
+                  </div>
+                  <span class="progress__value">74%</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="bio__section">
+        </section>
+        <section class="bio__section section">
           <div class="container">
             <div class="title__block">
-              <h2 class="title">player <span class="text-orange"> Bio</span></h2>
+              <h2 class="title">
+                player <span class="text-orange"> Bio</span>
+              </h2>
             </div>
             <div class="post__text_block">
-              <p>AS A PROFESSIONAL: Signed with the Knicks as a free agent in July 2023 after four-year college career at Rhode Island (one year) and Kentucky (three)...He and brother Obi became the fourth all-time brothers to play for the Knicks...Did not play in 2023 NBA 2K24 Summer League in Las Vegas due to injury. . .Undrafted in 2023 NBA Draft; signed by Knicks as a free agent on July 6, 2023…Participated in the 2024 NBA Slam Dunk Contest where he finished in third place…Signed a two-way contract with the Knicks on Aug. 14, 2024.
-
-                2023-24 (Knicks): Averaged 1.4 ppg, 0.8 rpg, over 4.2 mpg in nine games...Recorded a career-high 11 points on 57.1-percent shooting, four rebounds over 17 minutes against Orlando (Feb. 14).</p>
-              <p>AS A COLLEGIAN (Rhode Island-Kentucky): Four-year averages of 7.4 ppg and 4.5 rpg with .471 shooting (327-695 FGA) over 21.7 mpg in 116 total games (40 starts). . .Played first college season (2019-20) at Rhode Island, then final three seasons at Kentucky (2020-21 thru 2022-23). . .Career-high 12.4 ppg for Kentucky in senior season of 2022-23. . .Recorded five 20+ scoring games and eight double-doubles (all as a senior in 2022-23). . .Junior (2021-22): Named to Southeastern Conference Winter Academic Honor Roll. . .Averaged 6.2 ppg over 17.7 mpg in 29 games (four starts). . .Played the full 40 minutes in Wildcats’ win over Alabama, Feb 19, 2022 (13 pts, 6 reb). . .Missed five games due to injury. . .Sophomore (2020-21): In first season at Kentucky, notched 5.2 ppg over 17.1 mpg in 24 games (two starts). . .Named to Southeastern Conference First Year Academic Honor Roll. . .Freshman (2019-20): In lone season at Rhode Island, had 5.1 ppg over 18.5 mpg in 30 games (three starts) as Rams went 21-9 on the season and 13-5 in the A-10.</p>
+              <p>
+                AS A PROFESSIONAL: Signed with the Knicks as a free agent in
+                July 2023 after four-year college career at Rhode Island (one
+                year) and Kentucky (three)...He and brother Obi became the
+                fourth all-time brothers to play for the Knicks...Did not play
+                in 2023 NBA 2K24 Summer League in Las Vegas due to injury. .
+                .Undrafted in 2023 NBA Draft; signed by Knicks as a free agent
+                on July 6, 2023…Participated in the 2024 NBA Slam Dunk Contest
+                where he finished in third place…Signed a two-way contract with
+                the Knicks on Aug. 14, 2024. 2023-24 (Knicks): Averaged 1.4 ppg,
+                0.8 rpg, over 4.2 mpg in nine games...Recorded a career-high 11
+                points on 57.1-percent shooting, four rebounds over 17 minutes
+                against Orlando (Feb. 14).
+              </p>
+              <p>
+                AS A COLLEGIAN (Rhode Island-Kentucky): Four-year averages of
+                7.4 ppg and 4.5 rpg with .471 shooting (327-695 FGA) over 21.7
+                mpg in 116 total games (40 starts). . .Played first college
+                season (2019-20) at Rhode Island, then final three seasons at
+                Kentucky (2020-21 thru 2022-23). . .Career-high 12.4 ppg for
+                Kentucky in senior season of 2022-23. . .Recorded five 20+
+                scoring games and eight double-doubles (all as a senior in
+                2022-23). . .Junior (2021-22): Named to Southeastern Conference
+                Winter Academic Honor Roll. . .Averaged 6.2 ppg over 17.7 mpg in
+                29 games (four starts). . .Played the full 40 minutes in
+                Wildcats’ win over Alabama, Feb 19, 2022 (13 pts, 6 reb). .
+                .Missed five games due to injury. . .Sophomore (2020-21): In
+                first season at Kentucky, notched 5.2 ppg over 17.1 mpg in 24
+                games (two starts). . .Named to Southeastern Conference First
+                Year Academic Honor Roll. . .Freshman (2019-20): In lone season
+                at Rhode Island, had 5.1 ppg over 18.5 mpg in 30 games (three
+                starts) as Rams went 21-9 on the season and 13-5 in the A-10.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="player__stat-table_section">
+        </section>
+        <section class="player__stat-table_section section">
           <div class="container">
             <div class="title__block">
-              <h2 class="title">Traditional <span class="text-orange">Splits</span></h2>
+              <h2 class="title">
+                Traditional <span class="text-orange">Splits</span>
+              </h2>
             </div>
             <div class="player-table">
-              <div class="player-table__header"><span>By Year</span><span> TEAM</span><span> GP</span><span>MIN</span><span>PTS</span><span>FGM </span><span>FGA</span><span>FG% </span><span>3PM</span><span>3PA </span><span>3P% </span><span>FTM</span><span>FTA</span><span>FT%</span><span>OREB</span><span>DREB </span><span>reb</span><span>AST </span><span>TOV</span><span>STL</span><span>BLK</span><span>PF </span><span>FP </span><span>DD2</span><span>TD3</span><span>+/-</span></div>
-              <div class="player-table__body"><span class="text-orange text-bold">2016 - 18</span><a href="#" class="link-reset hover-text-orange text-bold">bos</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="player-table__body"><span class="text-orange text-bold">2018 - 19</span><a href="#" class="link-reset hover-text-orange text-bold">cli</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="player-table__body"><span class="text-orange text-bold">2019 - 20</span><a href="#" class="link-reset hover-text-orange text-bold">tor</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="player-table__body"><span class="text-orange text-bold">2020 - 22</span><a href="#" class="link-reset hover-text-orange text-bold">lal</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="player-table__body"><span class="text-orange text-bold">2022 - 23</span><a href="#" class="link-reset hover-text-orange text-bold">alv</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-              <div class="player-table__body"><span class="text-orange text-bold">2023 - pres</span><a href="#" class="link-reset hover-text-orange text-bold">kni</a><span>21</span><span>32.5</span><span>47.2</span><span>11.3</span><span>15.4</span><span>21.5</span><span>42.6</span><span>73.9</span><span>85.4</span><span>9.2</span><span>18.5</span><span>10.2</span><span>17.4</span><span>54.2</span><span>11.3</span><span>15.8</span><span>19.2</span><span>65.2</span><span>21.9</span><span>69.2</span><span>3.8</span><span>9.7</span><span>12.4</span><span>-2.7</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="cards__section">
-          <div class="container">
-            <div class="title__block">
-              <h2 class="title">player <span class="text-orange">news</span></h2>
-            </div>
-            <div class="cards__items grid-col-4">
-              <div class="card__item"><a href="#" class="link-reset card__img_block image-block"><img class="card__img ibg" src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif" /></a>
-                <div class="card__footer">
-                  <h4 class="label fs-16">02.02.2025</h4><a href="#" class="hover-text-orange link-reset card__title">Trade Rumors Heat Up</a>
-                  <p class="reset description"> crucial player faces time off due to injury, impacting upcoming games.</p>
-                </div>
+              <div class="tbl__head grid-player-tbl">
+                <span>By Year</span><span> TEAM</span><span> GP</span
+                ><span>MIN</span><span>PTS</span><span>FGM </span
+                ><span>FGA</span><span>FG% </span><span>3PM</span
+                ><span>3PA </span><span>3P% </span><span>FTM</span
+                ><span>FTA</span><span>FT%</span><span>OREB</span
+                ><span>DREB </span><span>reb</span><span>AST </span
+                ><span>TOV</span><span>STL</span><span>BLK</span><span>PF </span
+                ><span>FP </span><span>DD2</span><span>TD3</span
+                ><span>+/-</span>
               </div>
-              <div class="card__item"><a href="#" class="link-reset card__img_block image-block"><img class="card__img ibg" src="/images/f1ac0fb455b8d40ebd61e1320387601c.webp" /></a>
-                <div class="card__footer">
-                  <h4 class="label fs-16">03.02.2025</h4><a href="#" class="hover-text-orange link-reset card__title">Overtime Victory</a>
-                  <p class="reset description">A dominant defensive effort shuts down the opposition and leads to victory.</p>
-                </div>
+              <div class="tbl__body grid-player-tbl">
+                <span class="text-orange text-bold">2016 - 18</span>
+                <a href="#" class="player-tbl__team hover-text-orange">bos</a>
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
               </div>
-              <div class="card__item"><a href="#" class="link-reset card__img_block image-block"><img class="card__img ibg" src="/images/79ba54b19f3faef57d735d0f3497aee5.webp" /></a>
-                <div class="card__footer">
-                  <h4 class="label fs-16">04.02.2025</h4><a href="#" class="hover-text-orange link-reset card__title">Injury Update</a>
-                  <p class="reset description">Speculation grows as reports suggest a major trade could be in the works.</p>
-                </div>
-              </div>
-              <div class="card__item"><a href="#" class="link-reset card__img_block image-block"><img class="card__img ibg" src="/images/9c451593c77016142eafee2c656afd52.webp" /></a>
-                <div class="card__footer">
-                  <h4 class="label fs-16">05.02.2025</h4><a href="#" class="hover-text-orange link-reset card__title"> Masterclass Secures </a>
-                  <p class="reset description">A young talent delivers an outstanding performance, making a strong case.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="video__section">
-          <div class="container">
-            <div class="title__block">
-              <h2 class="title">player <span class="text-orange">videos</span></h2>
-            </div>
-            <div class="video__rows grid-col-4"><a href="#" class="link-reset news__item hover-text-orange">
-                <div class="image-block video-card__img_block"><img class="news__big_img ibg" src="/images/49478a35866cbdf9f3c78e36cc9c5391.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                <div class="news-_text_block">
-                  <h4 class="label fs-16">03.02.2025</h4>
-                  <h3 class="news__title fs-22">lakers - chikago. highlights</h3>
-                </div>
-                <div class="overlay ibg"></div>
-              </a><a href="#" class="link-reset news__item hover-text-orange">
-                <div class="image-block video-card__img_block"><img class="news__big_img ibg" src="/images/d441469470ff573a3ccd043093bd8e4b.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                <div class="news-_text_block">
-                  <h4 class="label fs-16">04.02.2025</h4>
-                  <h3 class="news__title fs-22">the best moments of the tour</h3>
-                </div>
-                <div class="overlay ibg"></div>
-              </a><a href="#" class="link-reset news__item hover-text-orange">
-                <div class="image-block video-card__img_block"><img class="news__big_img ibg" src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                <div class="news-_text_block">
-                  <h4 class="label fs-16">06.02.2025</h4>
-                  <h3 class="news__title fs-22">interviews after matches</h3>
-                </div>
-                <div class="overlay ibg"></div>
-              </a><a href="#" class="link-reset news__item hover-text-orange">
-                <div class="image-block video-card__img_block"><img class="news__big_img ibg" src="/images/9c451593c77016142eafee2c656afd52.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                <div class="news-_text_block">
-                  <h4 class="label fs-16">08.02.2025</h4>
-                  <h3 class="news__title fs-22">big video reviews top matches</h3>
-                </div>
-                <div class="overlay ibg"></div>
-              </a></div>
-          </div>
-        </div>
-        <div class="players__section">
-          <div class="container">
-            <div class="title__block">
-              <h2 class="title">related <span class="text-orange">players </span></h2>
-            </div>
-            <div class="players__rows grid-col-3">
-              <div class="player__card"><a href="#" class="link-reset player__img_block image-block">10<img class="player__img ibg hover-scale" src="/images/bf4fbff951b465954b2f3eee83f8fe98.webp" /></a>
-                <div class="player-card__footer">
-                  <div><a href="#" class="hover-text-orange link-reset player__name">jacob toppin</a>
-                    <p class="reset text-orange">forward</p>
-                  </div><a href="#" class="link-reset text-bold hover-text-orange">Player stats<img src="/images/7a3a1e5634c015147235705b05aa37e9.png" class="arrow" /></a>
-                </div>
-              </div>
-              <div class="player__card"><a href="#" class="link-reset player__img_block image-block">25<img class="player__img ibg hover-scale" src="/images/9646ca672242476515a2b522eec85521.webp" /></a>
-                <div class="player-card__footer">
-                  <div><a href="#" class="hover-text-orange link-reset player__name">delon wright</a>
-                    <p class="reset text-orange">guard</p>
-                  </div><a href="#" class="link-reset text-bold hover-text-orange">Player stats<img src="/images/7a3a1e5634c015147235705b05aa37e9.png" class="arrow" /></a>
-                </div>
-              </div>
-              <div class="player__card"><a href="#" class="link-reset player__img_block image-block">32<img class="player__img ibg hover-scale" src="/images/a533c3f0f80eec0bea3c7c24e8ea92e8.webp" /></a>
-                <div class="player-card__footer">
-                  <div><a href="#" class="hover-text-orange link-reset player__name">cameron payne</a>
-                    <p class="reset text-orange">center-forward</p>
-                  </div><a href="#" class="link-reset text-bold hover-text-orange">Player stats<img src="/images/7a3a1e5634c015147235705b05aa37e9.png" class="arrow" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="container">
-          <div class="footer__content"><a class="footer__logo_link link-reset" href="https://basketball-score.ca/"><img class="footer__logo_img" src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png" /></a>
-            <div class="footer__menu">
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">about us</a><a class="footer__link link-reset" href="#">Sponsorship</a><a class="footer__link link-reset" href="#">Hall of Fame</a><a class="footer__link link-reset" href="#">Fan Shop</a><a class="footer__link link-reset" href="#">Tickets</a></div>
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">News</a><a class="footer__link link-reset" href="#">Highlights</a><a class="footer__link link-reset" href="#">Statistics</a><a class="footer__link link-reset" href="#">Standings</a><a class="footer__link link-reset" href="#">Schedule</a></div>
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">Players</a><a class="footer__link link-reset" href="#">Teams</a><a class="footer__link link-reset" href="#">Terms of Service</a><a class="footer__link link-reset" href="#">Privacy Policy</a><a class="footer__link link-reset" href="#">Contact</a></div>
-            </div>
-          </div>
-          <div class="footer__btm"><span>© 2025. All rights reserved</span></div>
-        </div>
-      </div>
-    </div>
-  </body>
 
+              <div class="tbl__body grid-player-tbl">
+                <span class="text-orange text-bold">2018 - 19</span>
+                <a href="#" class="player-tbl__team hover-text-orange text-bold"
+                  >cli</a
+                >
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+
+              <div class="tbl__body grid-player-tbl">
+                <span class="text-orange text-bold">2019 - 20</span>
+                <a href="#" class="player-tbl__team hover-text-orange text-bold"
+                  >tor</a
+                >
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+
+              <div class="tbl__body grid-player-tbl">
+                <span class="text-orange text-bold">2020 - 22</span>
+                <a href="#" class="player-tbl__team hover-text-orange text-bold"
+                  >lal</a
+                >
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+
+              <div class="tbl__body grid-player-tbl">
+                <span class="text-orange text-bold">2022 - 23</span>
+                <a href="#" class="player-tbl__team hover-text-orange text-bold"
+                  >alv</a
+                >
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+
+              <div class="tbl__body grid-player-tbl">
+                <span class="text-orange text-bold">2023 - pres</span>
+                <a href="#" class="player-tbl__team hover-text-orange text-bold"
+                  >kni</a
+                >
+                <span>21</span><span>32.5</span><span>47.2</span>
+                <span>11.3</span><span>15.4</span><span>21.5</span>
+                <span>42.6</span><span>73.9</span><span>85.4</span>
+                <span>9.2</span><span>18.5</span><span>10.2</span>
+                <span>17.4</span><span>54.2</span><span>11.3</span>
+                <span>15.8</span><span>19.2</span><span>65.2</span>
+                <span>21.9</span><span>69.2</span><span>3.8</span>
+                <span>9.7</span><span>12.4</span><span>-2.7</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cards__section section">
+          <div class="container">
+            <div class="title__block">
+              <h2 class="title">
+                player <span class="text-orange">news</span>
+              </h2>
+            </div>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="card__item">
+                    <a href="#" class="card__img_block image-block"
+                      ><img
+                        class="card__img ibg"
+                        src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif"
+                    /></a>
+                    <div class="card__footer">
+                      <h4 class="label fs-16">02.02.2025</h4>
+                      <a href="#" class="hover-text-orange card__title"
+                        >Trade Rumors Heat Up</a
+                      >
+                      <p class="description card__description">
+                        crucial player faces time off due to injury, impacting
+                        upcoming games.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="card__item">
+                    <a href="#" class="card__img_block image-block"
+                      ><img
+                        class="card__img ibg"
+                        src="/images/f1ac0fb455b8d40ebd61e1320387601c.webp"
+                    /></a>
+                    <div class="card__footer">
+                      <h4 class="label fs-16">03.02.2025</h4>
+                      <a href="#" class="hover-text-orange card__title"
+                        >Overtime Victory</a
+                      >
+                      <p class="description card__description">
+                        A dominant defensive effort shuts down the opposition
+                        and leads to victory.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="card__item">
+                    <a href="#" class="card__img_block image-block"
+                      ><img
+                        class="card__img ibg"
+                        src="/images/79ba54b19f3faef57d735d0f3497aee5.webp"
+                    /></a>
+                    <div class="card__footer">
+                      <h4 class="label fs-16">04.02.2025</h4>
+                      <a href="#" class="hover-text-orange card__title"
+                        >Injury Update</a
+                      >
+                      <p class="description card__description">
+                        Speculation grows as reports suggest a major trade could
+                        be in the works.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="card__item">
+                    <a href="#" class="card__img_block image-block"
+                      ><img
+                        class="card__img ibg"
+                        src="/images/9c451593c77016142eafee2c656afd52.webp"
+                    /></a>
+                    <div class="card__footer">
+                      <h4 class="label fs-16">05.02.2025</h4>
+                      <a href="#" class="hover-text-orange card__title">
+                        Masterclass Secures
+                      </a>
+                      <p class="description card__description">
+                        A young talent delivers an outstanding performance,
+                        making a strong case. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Laboriosam beatae numquam
+                        nisi exercitationem dolore fugit ut possimus labore
+                        consectetur? Ex?
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="card__item">
+                    <a href="#" class="card__img_block image-block"
+                      ><img
+                        class="card__img ibg"
+                        src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif"
+                    /></a>
+                    <div class="card__footer">
+                      <h4 class="label fs-16">02.02.2025</h4>
+                      <a href="#" class="hover-text-orange card__title"
+                        >Trade Rumors Heat Up</a
+                      >
+                      <p class="description card__description">
+                        crucial player faces time off due to injury, impacting
+                        upcoming games.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="card__item">
+                    <a href="#" class="card__img_block image-block"
+                      ><img
+                        class="card__img ibg"
+                        src="/images/f1ac0fb455b8d40ebd61e1320387601c.webp"
+                    /></a>
+                    <div class="card__footer">
+                      <h4 class="label fs-16">03.02.2025</h4>
+                      <a href="#" class="hover-text-orange card__title"
+                        >Overtime Victory</a
+                      >
+                      <p class="description card__description">
+                        A dominant defensive effort shuts down the opposition
+                        and leads to victory.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="card__item">
+                    <a href="#" class="card__img_block image-block"
+                      ><img
+                        class="card__img ibg"
+                        src="/images/79ba54b19f3faef57d735d0f3497aee5.webp"
+                    /></a>
+                    <div class="card__footer">
+                      <h4 class="label fs-16">04.02.2025</h4>
+                      <a href="#" class="hover-text-orange card__title"
+                        >Injury Update</a
+                      >
+                      <p class="description card__description">
+                        Speculation grows as reports suggest a major trade could
+                        be in the works.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="card__item">
+                    <a href="#" class="card__img_block image-block"
+                      ><img
+                        class="card__img ibg"
+                        src="/images/9c451593c77016142eafee2c656afd52.webp"
+                    /></a>
+                    <div class="card__footer">
+                      <h4 class="label fs-16">05.02.2025</h4>
+                      <a href="#" class="hover-text-orange card__title">
+                        Masterclass Secures
+                      </a>
+                      <p class="description card__description">
+                        A young talent delivers an outstanding performance,
+                        making a strong case. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Laboriosam beatae numquam
+                        nisi exercitationem dolore fugit ut possimus labore
+                        consectetur? Ex?
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video__section section">
+          <div class="container">
+            <div class="title__block">
+              <h2 class="title">
+                player <span class="text-orange">videos</span>
+              </h2>
+            </div>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/49478a35866cbdf9f3c78e36cc9c5391.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">03.02.2025</h4>
+                      <h3 class="news__item_title">
+                        lakers - chikago. highlights
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/d441469470ff573a3ccd043093bd8e4b.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">04.02.2025</h4>
+                      <h3 class="news__item_title">
+                        the best moments of the tour
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">06.02.2025</h4>
+                      <h3 class="news__item_title">interviews after matches</h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/9c451593c77016142eafee2c656afd52.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">08.02.2025</h4>
+                      <h3 class="news__item_title">
+                        big video reviews top matches
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="players__section section">
+          <div class="container">
+            <div class="title__block">
+              <h2 class="title">
+                related <span class="text-orange">players</span>
+              </h2>
+            </div>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__img_block image-block"
+                      >10<img
+                        class="player__img ibg hover-scale"
+                        src="/images/bf4fbff951b465954b2f3eee83f8fe98.webp"
+                    /></a>
+                    <div class="player-card__info">
+                      <div>
+                        <a href="#" class="hover-text-orange player__name"
+                          >jacob toppin</a
+                        >
+                        <p class="reset text-orange">forward</p>
+                      </div>
+                      <div></div>
+                      <a href="#" class="player-card__link"
+                        >Player stats
+                        <img
+                          src="/images/7a3a1e5634c015147235705b05aa37e9.png"
+                          class="arrow"
+                        />
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__img_block image-block"
+                      >25<img
+                        class="player__img ibg hover-scale"
+                        src="/images/9646ca672242476515a2b522eec85521.webp"
+                    /></a>
+                    <div class="player-card__info">
+                      <div>
+                        <a href="#" class="hover-text-orange player__name"
+                          >delon wright</a
+                        >
+                        <p class="reset text-orange">guard</p>
+                      </div>
+                      <a href="#" class="player-card__link"
+                        >Player stats
+                        <img
+                          src="/images/7a3a1e5634c015147235705b05aa37e9.png"
+                          class="arrow"
+                        />
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__img_block image-block"
+                      >25<img
+                        class="player__img ibg hover-scale"
+                        src="/images/9646ca672242476515a2b522eec85521.webp"
+                    /></a>
+                    <div class="player-card__info">
+                      <div>
+                        <a href="#" class="hover-text-orange player__name"
+                          >delon wright</a
+                        >
+                        <p class="reset text-orange">guard</p>
+                      </div>
+                      <a href="#" class="player-card__link"
+                        >Player stats
+                        <img
+                          src="/images/7a3a1e5634c015147235705b05aa37e9.png"
+                          class="arrow"
+                        />
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                   <article class="player__card">
+                <a href="#" class="player__img_block image-block"
+                  >32<img
+                    class="player__img ibg hover-scale"
+                    src="/images/a533c3f0f80eec0bea3c7c24e8ea92e8.webp"
+                /></a>
+                <div class="player-card__info">
+                  <div>
+                    <a href="#" class="hover-text-orange player__name"
+                      >cameron payne</a
+                    >
+                    <p class="reset text-orange">center-forward</p>
+                  </div>
+                  <a href="#" class="player-card__link"
+                    >Player stats
+                    <img
+                      src="/images/7a3a1e5634c015147235705b05aa37e9.png"
+                      class="arrow"
+                    />
+                  </a>
+                </div>
+              </article>
+                </div>
+              </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <a class="footer__logo_link" href="https://basketball-score.ca/"
+              ><img class="footer__logo_img" src="/images/logo.png"
+            /></a>
+            <div class="footer__menu">
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">about us</a
+                ><a class="footer__link" href="#">Sponsorship</a
+                ><a class="footer__link" href="#">Hall of Fame</a
+                ><a class="footer__link" href="#">Fan Shop</a
+                ><a class="footer__link" href="#">Tickets</a>
+              </div>
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">News</a
+                ><a class="footer__link" href="#">Highlights</a
+                ><a class="footer__link" href="#">Statistics</a
+                ><a class="footer__link" href="#">Standings</a
+                ><a class="footer__link" href="#">Schedule</a>
+              </div>
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">Players</a
+                ><a class="footer__link" href="#">Teams</a
+                ><a class="footer__link" href="#">Terms of Service</a
+                ><a class="footer__link" href="#">Privacy Policy</a
+                ><a class="footer__link" href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__btm">
+            <span>© 2025. All rights reserved</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
+    <script type="module" src="/js/playerProgress.js"></script>
+  </body>
 </html>
