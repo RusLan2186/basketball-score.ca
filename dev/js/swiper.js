@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // cups__swiper — может быть несколько
   initSwiper('.cups__swiper', {
-    slidesPerView: 3,
+    slidesPerView: 2,
     speed: 800,
     grabCursor: true,
     loop: true,
@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 15 },
       550: { slidesPerView: 2, spaceBetween: 15 },
-      800: { slidesPerView: 3, spaceBetween: 15 },
     },
   });
 

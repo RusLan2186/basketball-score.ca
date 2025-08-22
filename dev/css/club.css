@@ -1,0 +1,233 @@
+.team-header__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  font-size: 50px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.club-header__logo {
+  height: 120px;
+}
+
+.management__rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.management__item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  align-items: flex-start;
+  row-gap: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 127, 0);
+}
+
+.management__photo_block {
+  padding-bottom: 80%;
+}
+
+.management__photo {
+  width: 100%;
+  object-position: 100% 15%;
+}
+
+.management__text_block {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  row-gap: 5px;
+  padding: 10px;
+}
+
+.manager__name {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.history__section {
+  margin-bottom: 50px;
+}
+
+.history__rows {
+  display: block;
+}
+
+.history__img_block {
+  float: left;
+  width: 40%;
+  margin: 0 20px 20px 0;
+}
+
+.history__img {
+  width: 100%;
+  height: auto;
+}
+
+.players__section {
+  margin-bottom: 50px;
+}
+
+.players__rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+}
+
+.player__card {
+  box-shadow: 0px 0px 4px rgb(255, 127, 0);
+}
+
+.player__img_block {
+  padding-bottom: 60%;
+  color: rgb(255, 127, 0);
+  font-size: 60px;
+  font-weight: 700;
+  overflow: hidden;
+  display: block;
+  transition: 0.3s all ease;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.player__img_block:hover {
+  background-color: rgb(255, 127, 0);
+  color: rgb(255, 255, 255);
+  transition: 0.3s all ease;
+}
+
+.player-card__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.player__name {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.player-card__link {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.player-card__link .arrow {
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.player-card__link:hover .arrow {
+  transform: translateX(10px);
+}
+
+.cups__section {
+  margin-bottom: 50px;
+}
+
+.cups__rows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cup__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.cup__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.cup__img {
+  height: 210px;
+}
+
+@media (max-width: 899.98px) {
+  .history__rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .history__img_block {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 799.98px) {
+  .cups__rows {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .team-header__block {
+    font-size: 40px;
+  }
+
+  .club-header__logo {
+    height: 90px;
+  }
+
+  .player__name {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 549.98px) {
+  .team-header__block {
+    font-size: 35px;
+  }
+
+  .club-header__logo {
+    height: 70px;
+  }
+
+  .management__photo_block {
+    padding-bottom: 70%;
+  }
+}
+
+@media (max-width: 449.98px) {
+  .team-header__block {
+    font-size: 28px;
+  }
+
+  .cup__title {
+    font-size: 20px;
+  }
+  .cup__img {
+    height: 200px;
+  }
+}
