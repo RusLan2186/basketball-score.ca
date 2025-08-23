@@ -13,6 +13,7 @@
 @import 'club.css';
 @import 'player.css';
 @import 'contact.css';
+@import 'lives.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -375,72 +376,7 @@ body {
 
 
 
-.lives__section {
-  margin-bottom: 50px;
-}
-.lives__rows {
-  column-gap: 20px;
-  margin-bottom: 20px;
-}
-.lives__rows:last-child {
-  margin-bottom: 0;
-}
-.lives__item {
-  padding-bottom: 40px;
-  padding-top: 20px;
-  background-image: url('../images/72000665af70e388c2c249772f108011.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(255, 127, 0);
-  border-radius: 10px;
-  position: relative;
-}
-.lives__date_block {
-  font-size: 20px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 10;
-}
-.lives__body {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  position: relative;
-  z-index: 10;
-}
-.lives__team_block {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-  font-size: 26px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-.lives__team_logo {
-  height: 120px;
-}
-.lives__score {
-  font-size: 50px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-.lives__overlay {
-  backdrop-filter: blur(3px);
-  background-color: rgba(0, 0, 0, 0.44);
-  border-radius: 10px;
-}
+
 .calendar__section {
   margin-bottom: 50px;
 }

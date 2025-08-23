@@ -1,0 +1,128 @@
+.lives__rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.lives__item {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  background-image: url('../images/72000665af70e388c2c249772f108011.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 127, 0);
+  border-radius: 10px;
+  position: relative;
+}
+
+.lives__date_block {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+}
+
+.lives__body {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.lives__team_block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.lives__team_logo {
+  height: 80px;
+}
+.lives__score {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 127, 0);
+  text-transform: uppercase;
+}
+.lives__overlay {
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .lives__date_block {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .lives__team_block {
+    font-size: 22px;
+  }
+
+  .lives__team_logo {
+    height: 60px;
+  }
+
+  .lives__score {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lives__rows {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  .lives__team_block {
+    font-size: 22px;
+  }
+
+  .lives__team_logo {
+    height: 70px;
+  }
+
+  .lives__score {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .lives__item {
+    padding: 20px;
+  }
+  .lives__date_block {
+    font-size: 18px;
+  }
+  .lives__body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .lives__team_block {
+    font-size: 20px;
+  }
+
+  .lives__team_logo {
+    height: 50px;
+  }
+
+  .lives__score {
+    font-size: 30px;
+  }
+}
