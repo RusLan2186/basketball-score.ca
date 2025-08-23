@@ -1,3 +1,6 @@
+/* =============================
+   1. Импорты
+============================= */
 @import 'normalize.css';
 @import 'header.css';
 @import 'hero.css';
@@ -17,9 +20,11 @@
 @import 'calendar.css';
 @import 'pagination.css';
 @import 'swiper.css';
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
+/* =============================
+   2. Базовые стили
+============================= */
 html {
   font-size: 16px;
   scrollbar-gutter: stable;
@@ -36,19 +41,21 @@ body {
   overflow-y: scroll;
 }
 
+/* Скроллбар */
 ::-webkit-scrollbar {
   width: 4px;
 }
-
 ::-webkit-scrollbar:horizontal {
   height: 3px;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: rgb(255, 127, 0);
   border-radius: 2px;
 }
 
+/* =============================
+   3. Контейнеры и сетка
+============================= */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -77,16 +84,9 @@ body {
   padding-top: 130px;
 }
 
-.link-reset {
-  cursor: pointer;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.mt-reset {
-  margin-top: 0;
-}
-
+/* =============================
+   4. Типографика
+============================= */
 .title__block {
   margin-bottom: 35px;
 }
@@ -113,9 +113,13 @@ body {
   text-transform: capitalize;
 }
 
-.pos-sticky {
-  position: sticky;
-  top: 80px;
+/* =============================
+   5. Кнопки и ссылки
+============================= */
+.link-reset {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .link-block {
@@ -139,34 +143,22 @@ body {
 
 .link__btn:hover {
   background-color: rgb(255, 127, 0);
-  border-color: #fff; /* белая рамка */
+  border-color: #fff;
   box-shadow: 0 0 10px rgba(255, 127, 0, 0.7);
   transform: scale(1.05);
 }
 
-.text-orange {
+.hover-text-orange {
+  transition: 0.3s all ease;
+}
+
+.hover-text-orange:hover {
   color: rgb(255, 127, 0);
 }
-.text-right {
-  text-align: right;
-}
 
-.label {
-  color: rgb(255, 255, 255);
-  display: inline-block;
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  padding-bottom: 3px;
-  background: #ff7f00;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 3px;
-  border-radius: 10px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
+/* =============================
+   6. Изображения и overlay
+============================= */
 .ibg {
   height: 100%;
   width: 100%;
@@ -175,23 +167,13 @@ body {
   left: 0;
   top: 0;
 }
+
 .image-block {
   display: block;
   width: 100%;
   position: relative;
 }
 
-.hover-text-orange {
-  transition: 0.3s all ease;
-}
-.hover-text-orange:hover {
-  color: rgb(255, 127, 0);
-  transition: 0.3s all ease;
-}
-
-.fs-16 {
-  font-size: 16px;
-}
 .overlay {
   background: linear-gradient(
     0deg,
@@ -202,34 +184,69 @@ body {
   border-radius: 10px;
   transition: 0.3s opacity;
 }
+
 .overlay:hover {
   opacity: 1;
-}
-
-.fs-22 {
-  font-size: 22px;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-bold {
-  font-weight: 700;
-}
-
-.team-logo__small {
-  height: 30px;
-  width: 30px;
-  object-fit: contain;
 }
 
 .hover-scale {
   transition: 0.3s all ease;
 }
+
 .hover-scale:hover {
   scale: 1.1;
-  transition: 0.3s all ease;
+}
+
+/* =============================
+   7. Утилитарные классы
+============================= */
+.text-orange {
+  color: rgb(255, 127, 0);
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-bold {
+  font-weight: 700;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.mt-reset {
+  margin-top: 0;
+}
+.pos-sticky {
+  position: sticky;
+  top: 80px;
+}
+
+/* Лейблы */
+.label {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  padding: 3px 10px;
+  background: #ff7f00;
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* =============================
+   8. Иконки, лого и элементы медиа
+============================= */
+.team-logo__small {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
 }
 
 .play__icon {
@@ -245,27 +262,29 @@ body {
   background: #ff7f00;
 }
 
+/* =============================
+   9. Сайдбары и дополнительные блоки
+============================= */
 .sidebar__point-table__section {
   margin-bottom: 30px;
 }
 
+/* =============================
+   10. Медиа-запросы
+============================= */
 @media (max-width: 767.98px) {
   body.lock {
     overflow: hidden;
   }
-
   .section {
     margin-bottom: 40px;
   }
-
   .section--with-pdng {
     padding-top: 100px;
   }
-
   .title__block {
     margin-bottom: 25px;
   }
-
   .title {
     font-size: 30px;
   }
@@ -276,7 +295,6 @@ body {
   .link__btn {
     width: 100%;
   }
-
   .title,
   .title--sm {
     font-size: 26px;
