@@ -84,7 +84,7 @@
 
 /* color today number */
 .fc .fc-day-today .fc-daygrid-day-number {
-  color: rgb(255, 127, 0);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 20px;
 }

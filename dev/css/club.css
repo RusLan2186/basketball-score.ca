@@ -177,6 +177,23 @@
   height: 210px;
 }
 
+@media (max-width: 991.98px) {
+  .team-header__section.section {
+    margin-bottom: 50px;
+  }
+  .team-header__section.section--with-pdng {
+    padding-top: 110px;
+  }
+
+  .team-header__block {
+    font-size: 35px;
+  }
+
+  .club-header__logo {
+    height: 70px;
+  }
+}
+
 @media (max-width: 899.98px) {
   .history__rows {
     display: flex;
@@ -191,12 +208,11 @@
 }
 
 @media (max-width: 767.98px) {
-  .team-header__block {
-    font-size: 40px;
+  .team-header__section.section {
+    margin-bottom: 30px;
   }
-
-  .club-header__logo {
-    height: 90px;
+  .team-header__section.section--with-pdng {
+    padding-top: 90px;
   }
 
   .cups__rows {
@@ -206,7 +222,7 @@
 
 @media (max-width: 549.98px) {
   .team-header__block {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .club-header__logo {
@@ -224,7 +240,7 @@
 
 @media (max-width: 449.98px) {
   .team-header__block {
-    font-size: 28px;
+    font-size: 27px;
   }
 
   .cup__title {

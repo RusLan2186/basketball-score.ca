@@ -102,8 +102,12 @@
   }
 }
 
-@media (max-width: 449.98px){
-    .matches__section {
+@media (max-width: 449.98px) {
+  .matches__section {
     margin-top: -80px;
+  }
+
+  .match__header .label{
+    font-size:14px;
   }
 }
