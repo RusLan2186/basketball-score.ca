@@ -12,6 +12,7 @@
 @import 'post.css';
 @import 'club.css';
 @import 'player.css';
+@import 'contact.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -293,22 +294,7 @@ body {
   border-bottom-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
 }
-.contact__section {
-  margin-bottom: 50px;
-  text-align: center;
-}
-.contact__block {
-  font-size: 17px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-}
-.contact__block:last-child {
-  margin-bottom: 0;
-}
+
 
 .sidebar__point-table__section {
   margin-bottom: 30px;
@@ -346,16 +332,7 @@ body {
   flex-direction: column;
   row-gap: 10px;
 }
-.video-post__section {
-  margin-bottom: 50px;
-}
-.video-post__img_block {
-  padding-bottom: 40%;
-  margin-bottom: 30px;
-}
-.video-post__img {
-  object-position: 100% 10%;
-}
+
 
 .grid-col-3 {
   display: grid;

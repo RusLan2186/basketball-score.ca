@@ -1,125 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>video-post</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a video-post page." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="container">
-          <div class="header__content"><a class="link-reset header__logo_link" href="https://basketball-score.ca/"><img class="header__logo_img" src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png" /></a>
-            <div class="header__menu">
-              <ul class="header__menu_list reset">
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/news">news</a></li>
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/post">post</a></li>
-                <li><a class="header__menu_link link-reset link-active" href="https://basketball-score.ca/video-post">video-post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/reviews">reviews</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/calendar">calendar</a></li>
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/statistics">statistics</a></li>
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/results">results</a></li>
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/videos">videos</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/lives">lives</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/team">team</a></li>
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/teams">teams</a></li>
-                <li><a class="link-reset header__menu_link" href="https://basketball-score.ca/player">player</a></li>
-                <li><a class="header__menu_link link-reset" href="https://basketball-score.ca/contact">contact</a></li>
+          <div class="header__content">
+            <a class="header__logo_link" href="/">
+              <img
+                class="header__logo_img"
+                alt="logo"
+                src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/news.html">news</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/lives.html">lives</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/club.html">club</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/clubs.html">clubs</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="video-post__section">
+      </header>
+      <main class="main">
+        <section class="video-post__section section section--with-pdng">
           <div class="container">
             <div class="title__block">
-              <h2 class="title">Last-Second Heroics Decide Thrilling <span class="text-orange">Basketball Battle</span></h2>
+              <h2 class="title">
+                Last-Second Heroics Decide Thrilling
+                <span class="text-orange">Basketball Battle</span>
+              </h2>
             </div>
-            <div class="video-post__img_block image-block"><img class="video-post__img ibg" src="/images/4ae967611a4878322fbdc22c163d4a29.jpg" /><img src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" class="play__icon hover-scale" /></div>
-            <div class="post__rows grid-col-70-1fr">
+            <div class="video-post__img_block image-block">
+              <img
+                class="video-post__img ibg"
+                src="/images/4ae967611a4878322fbdc22c163d4a29.jpg"
+              /><img
+                src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                class="play__icon hover-scale"
+              />
+            </div>
+            <div class="post__rows">
               <div class="post__content">
                 <div class="post__text_block">
-                  <p>Basketball fans witnessed an electrifying contest that kept everyone guessing until the very last second. Both teams entered the game with high stakes, and it showed in their relentless intensity from start to finish.</p>
-                  <p>The opening quarter set the tone with fast-paced action and sharp shooting from both sides. Defensive efforts were equally impressive, as players battled for every loose ball and contested every shot. Neither team allowed the other to gain a significant lead, making for an evenly matched showdown.</p>
-                  <p>As the game progressed, momentum swings became more dramatic. One team built a solid lead midway through the third quarter with a series of well-executed fast breaks and pinpoint passing. But just when it seemed like the game was slipping away, the opposition responded with a run of their own, fueled by suffocating defense and clutch perimeter shooting.</p>
-                  <p>The final quarter was nothing short of a thriller. With the clock winding down, each possession became crucial. A critical steal led to an explosive fast-break dunk, followed by a deep three-pointer that sent the crowd into a frenzy. With just seconds left, a perfectly executed play resulted in a game-winning shot at the buzzer, sealing an unforgettable victory.</p>
-                  <p class="reset">This game was a testament to resilience, teamwork, and the unpredictable nature of basketball. The emotions ran high, and the impact of this showdown will be felt long after the final whistle. </p>
+                  <p>
+                    Basketball fans witnessed an electrifying contest that kept
+                    everyone guessing until the very last second. Both teams
+                    entered the game with high stakes, and it showed in their
+                    relentless intensity from start to finish.
+                  </p>
+                  <p>
+                    The opening quarter set the tone with fast-paced action and
+                    sharp shooting from both sides. Defensive efforts were
+                    equally impressive, as players battled for every loose ball
+                    and contested every shot. Neither team allowed the other to
+                    gain a significant lead, making for an evenly matched
+                    showdown.
+                  </p>
+                  <p>
+                    As the game progressed, momentum swings became more
+                    dramatic. One team built a solid lead midway through the
+                    third quarter with a series of well-executed fast breaks and
+                    pinpoint passing. But just when it seemed like the game was
+                    slipping away, the opposition responded with a run of their
+                    own, fueled by suffocating defense and clutch perimeter
+                    shooting.
+                  </p>
+                  <p>
+                    The final quarter was nothing short of a thriller. With the
+                    clock winding down, each possession became crucial. A
+                    critical steal led to an explosive fast-break dunk, followed
+                    by a deep three-pointer that sent the crowd into a frenzy.
+                    With just seconds left, a perfectly executed play resulted
+                    in a game-winning shot at the buzzer, sealing an
+                    unforgettable victory.
+                  </p>
+                  <p>
+                    This game was a testament to resilience, teamwork, and the
+                    unpredictable nature of basketball. The emotions ran high,
+                    and the impact of this showdown will be felt long after the
+                    final whistle.
+                  </p>
+                  <p>
+                    The opening quarter set the tone with fast-paced action and
+                    sharp shooting from both sides. Defensive efforts were
+                    equally impressive, as players battled for every loose ball
+                    and contested every shot. Neither team allowed the other to
+                    gain a significant lead, making for an evenly matched
+                    showdown.
+                  </p>
+                  <p>
+                    This game was a testament to resilience, teamwork, and the
+                    unpredictable nature of basketball. The emotions ran high,
+                    and the impact of this showdown will be felt long after the
+                    final whistle.
+                  </p>
+                   <p>
+                    This game was a testament to resilience, teamwork, and the
+                    unpredictable nature of basketball. The emotions ran high,
+                    and the impact of this showdown will be felt long after the
+                    final whistle.
+                  </p>
+                   <p>
+                    This game was a testament to resilience, teamwork, and the
+                    unpredictable nature of basketball. The emotions ran high,
+                    and the impact of this showdown will be felt long after the
+                    final whistle.
+                  </p>
                 </div>
               </div>
-              <div class="sidebar">
-                <div class="sidebar__point-table__section mb-reset">
-                  <div class="point__table">
-                    <div class="point__table_header"><span>#</span><span class="text-left">team</span><span>GP </span><span>w</span><span>d</span><span>l</span><span>pts</span></div>
-                    <div class="point__table_body"><span class="text-bold">1.</span><a href="#" class="hover-text-orange link-reset point-table__team_block"><img class="team-logo__small" src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png" /><span>boston </span></a><span>37</span><span>30</span><span>5</span><span>4</span><span class="text-bold">37</span></div>
-                    <div class="point__table_body"><span class="text-bold">2.</span><a href="#" class="hover-text-orange link-reset point-table__team_block"><img class="team-logo__small" src="/images/30212b6c879b12b2e897964e144214ab.png" /><span>kniks</span></a><span>37</span><span>28</span><span>7</span><span>6</span><span class="text-bold">35</span></div>
-                    <div class="point__table_body"><span class="text-bold">3.</span><a href="#" class="hover-text-orange link-reset point-table__team_block"><img class="team-logo__small" src="/images/31fbc163e6d321a10053d1538bdc2f15.png" /><span>philad</span></a><span>37</span><span>25</span><span>9</span><span>7</span><span class="text-bold">32</span></div>
-                    <div class="point__table_body"><span class="text-bold">4.</span><a href="#" class="hover-text-orange link-reset point-table__team_block"><img class="team-logo__small" src="/images/e772f7594eee29f213175e86cb454918.png" /><span>miami</span></a><span>37</span><span>22</span><span>11</span><span>5</span><span class="text-bold">29</span></div>
-                    <div class="point__table_body"><span class="text-bold">5.</span><a href="#" class="hover-text-orange link-reset point-table__team_block"><img class="team-logo__small" src="/images/4ead8b11dd6fecdfb3ae789f2a4ab8af.png" /><span>toronto</span></a><span>37</span><span>19</span><span>14</span><span>9</span><span class="text-bold">24</span></div>
-                    <div class="point__table_body"><span class="text-bold">6.</span><a href="#" class="hover-text-orange link-reset point-table__team_block"><img class="team-logo__small" src="/images/5f9e9d3862d184bc6a36f384c1dd3ee9.png" /><span>boston </span></a><span>37</span><span>30</span><span>5</span><span>4</span><span class="text-bold">21</span></div>
-                    <div class="point__table_body"><span class="text-bold">7.</span><a href="#" class="hover-text-orange link-reset point-table__team_block"><img class="team-logo__small" src="/images/30212b6c879b12b2e897964e144214ab.png" /><span>kniks</span></a><span>37</span><span>28</span><span>7</span><span>6</span><span class="text-bold">20</span></div>
+              <aside class="video__post_aside">
+                <div class="video__post_aside pos-sticky">
+                  <div class="title__block title__block--sm">
+                    <h2 class="title title--sm">
+                      latest
+                      <span class="text-orange">news</span>
+                    </h2>
+                  </div>
+                  <div class="news__items_block">
+                    <a href="#" class="news__item hover-text-orange">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__big_img ibg"
+                          src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif"
+                        />
+                      </div>
+                      <div class="news-text__block">
+                        <h4 class="label news__label">03.02.2025</h4>
+                        <h3 class="news__item_title">
+                          lakers - chikago. review
+                        </h3>
+                      </div>
+                      <div class="overlay ibg"></div>
+                    </a>
+                    <a href="#" class="news__item hover-text-orange">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__big_img ibg"
+                          src="/images/79ba54b19f3faef57d735d0f3497aee5.webp"
+                        />
+                      </div>
+                      <div class="news-text__block">
+                        <h4 class="label news__label">04.02.2025</h4>
+                        <h3 class="news__item_title">
+                          clippers - boston. review
+                        </h3>
+                      </div>
+                      <div class="overlay ibg"></div>
+                    </a>
                   </div>
                 </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+          <section class="video__section section">
+          <div class="container">
+            <div class="title__block">
+              <h2 class="title">
+                latest <span class="text-orange">video</span>
+              </h2>
+            </div>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/49478a35866cbdf9f3c78e36cc9c5391.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">03.02.2025</h4>
+                      <h3 class="news__item_title">
+                        lakers - chikago. highlights
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/d441469470ff573a3ccd043093bd8e4b.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">04.02.2025</h4>
+                      <h3 class="news__item_title">
+                        the best moments of the tour
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">06.02.2025</h4>
+                      <h3 class="news__item_title">interviews after matches</h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/9c451593c77016142eafee2c656afd52.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">08.02.2025</h4>
+                      <h3 class="news__item_title">
+                        big video reviews top matches
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                  <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/49478a35866cbdf9f3c78e36cc9c5391.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">03.02.2025</h4>
+                      <h3 class="news__item_title">
+                        lakers - chikago. highlights
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/d441469470ff573a3ccd043093bd8e4b.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">04.02.2025</h4>
+                      <h3 class="news__item_title">
+                        the best moments of the tour
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">06.02.2025</h4>
+                      <h3 class="news__item_title">interviews after matches</h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news__item hover-text-orange">
+                    <div class="image-block video-card__img_block">
+                      <img
+                        class="news__big_img ibg"
+                        src="/images/9c451593c77016142eafee2c656afd52.webp"
+                      /><img
+                        class="play__icon hover-scale"
+                        src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp"
+                      />
+                    </div>
+                    <div class="news-text__block">
+                      <h4 class="label fs-16">08.02.2025</h4>
+                      <h3 class="news__item_title">
+                        big video reviews top matches
+                      </h3>
+                    </div>
+                    <div class="overlay ibg"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="video__section">
-          <div class="container">
-            <div class="title__block">
-              <h2 class="title">latest <span class="text-orange">videos</span></h2>
-            </div>
-            <div class="video__rows grid-col-4"><a href="#" class="link-reset news__item hover-text-orange">
-                <div class="image-block video-card__img_block"><img class="news__big_img ibg" src="/images/49478a35866cbdf9f3c78e36cc9c5391.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                <div class="news-_text_block">
-                  <h4 class="label fs-16">03.02.2025</h4>
-                  <h3 class="news__title fs-22">lakers - chikago. highlights</h3>
-                </div>
-                <div class="overlay ibg"></div>
-              </a><a href="#" class="link-reset news__item hover-text-orange">
-                <div class="image-block video-card__img_block"><img class="news__big_img ibg" src="/images/d441469470ff573a3ccd043093bd8e4b.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                <div class="news-_text_block">
-                  <h4 class="label fs-16">04.02.2025</h4>
-                  <h3 class="news__title fs-22">the best moments of the tour</h3>
-                </div>
-                <div class="overlay ibg"></div>
-              </a><a href="#" class="link-reset news__item hover-text-orange">
-                <div class="image-block video-card__img_block"><img class="news__big_img ibg" src="/images/2f07863322ff94159236cef2e8c7e2bc.jfif" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                <div class="news-_text_block">
-                  <h4 class="label fs-16">06.02.2025</h4>
-                  <h3 class="news__title fs-22">interviews after matches</h3>
-                </div>
-                <div class="overlay ibg"></div>
-              </a><a href="#" class="link-reset news__item hover-text-orange">
-                <div class="image-block video-card__img_block"><img class="news__big_img ibg" src="/images/9c451593c77016142eafee2c656afd52.webp" /><img class="play__icon hover-scale" src="/images/a6516cd92a51c4a803aa33ce48b4ddd5.webp" /></div>
-                <div class="news-_text_block">
-                  <h4 class="label fs-16">08.02.2025</h4>
-                  <h3 class="news__title fs-22">big video reviews top matches</h3>
-                </div>
-                <div class="overlay ibg"></div>
-              </a></div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__content"><a class="footer__logo_link link-reset" href="https://basketball-score.ca/"><img class="footer__logo_img" src="/images/7b12e28cbb6c3a99676ab1cbfd799663.png" /></a>
+          <div class="footer__content">
+            <a class="footer__logo_link" href="https://basketball-score.ca/"
+              ><img class="footer__logo_img" src="/images/logo.png"
+            /></a>
             <div class="footer__menu">
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">about us</a><a class="footer__link link-reset" href="#">Sponsorship</a><a class="footer__link link-reset" href="#">Hall of Fame</a><a class="footer__link link-reset" href="#">Fan Shop</a><a class="footer__link link-reset" href="#">Tickets</a></div>
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">News</a><a class="footer__link link-reset" href="#">Highlights</a><a class="footer__link link-reset" href="#">Statistics</a><a class="footer__link link-reset" href="#">Standings</a><a class="footer__link link-reset" href="#">Schedule</a></div>
-              <div class="footer-menu__item"><a class="footer__link link-reset" href="#">Players</a><a class="footer__link link-reset" href="#">Teams</a><a class="footer__link link-reset" href="#">Terms of Service</a><a class="footer__link link-reset" href="#">Privacy Policy</a><a class="footer__link link-reset" href="#">Contact</a></div>
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">about us</a
+                ><a class="footer__link" href="#">Sponsorship</a
+                ><a class="footer__link" href="#">Hall of Fame</a
+                ><a class="footer__link" href="#">Fan Shop</a
+                ><a class="footer__link" href="#">Tickets</a>
+              </div>
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">News</a
+                ><a class="footer__link" href="#">Highlights</a
+                ><a class="footer__link" href="#">Statistics</a
+                ><a class="footer__link" href="#">Standings</a
+                ><a class="footer__link" href="#">Schedule</a>
+              </div>
+              <div class="footer-menu__item">
+                <a class="footer__link" href="#">Players</a
+                ><a class="footer__link" href="#">Teams</a
+                ><a class="footer__link" href="#">Terms of Service</a
+                ><a class="footer__link" href="#">Privacy Policy</a
+                ><a class="footer__link" href="#">Contact</a>
+              </div>
             </div>
           </div>
-          <div class="footer__btm"><span>© 2025. All rights reserved</span></div>
+          <div class="footer__btm">
+            <span>© 2025. All rights reserved</span>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
   </body>
-
 </html>
